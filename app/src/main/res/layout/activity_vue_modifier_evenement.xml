@@ -93,13 +93,13 @@
 
 
         <RadioButton
-            android:id="@+id/radioButtonMenu"
+            android:id="@+id/radioButtonRepas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/texteLieu"
             android:layout_marginTop="10dp"
-            android:text="Menu" />
+            android:text="Repas" />
 
 
         <RadioButton
@@ -117,7 +117,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textMultiLine"
-            android:layout_below="@id/radioButtonMenu"
+            android:layout_below="@id/radioButtonRepas"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp"
             android:text="Notes" />

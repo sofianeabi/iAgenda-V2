@@ -12,15 +12,15 @@
         android:layout_height="match_parent">
 
         <EditText
-            android:id="@+id/champNotes"
+            android:id="@+id/texteNotes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/radioButtonClassique"
             android:ems="10"
             android:inputType="textMultiLine"
-            android:text="Notes"
-            tools:layout_editor_absoluteX="83dp"
-            tools:layout_editor_absoluteY="633dp" />
+            android:layout_below="@id/radioButtonRepas"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Notes" />
 
         <EditText
             android:id="@+id/champTitre"
@@ -36,75 +36,71 @@
 
         <TimePicker
             android:id="@+id/dateDebut"
-            android:layout_width="200dp"
-            android:layout_height="86dp"
-            android:layout_alignParentStart="true"
+            android:layout_width="190dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="30dp"
             android:layout_below="@+id/boutonSelectionContact"
-            android:headerBackground="@color/colorAccent"
-            tools:layout_editor_absoluteX="42dp"
-            tools:layout_editor_absoluteY="179dp" />
+            android:headerBackground="@color/colorAccent" />
 
         <EditText
             android:id="@+id/champLieu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/dateFin"
+            android:layout_centerHorizontal="true"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Lieu"
-            tools:layout_editor_absoluteX="83dp"
-            tools:layout_editor_absoluteY="389dp" />
+            android:text="Lieu" />
 
         <QuickContactBadge
             android:id="@+id/boutonSelectionContact"
             android:layout_width="204dp"
             android:layout_height="46dp"
             android:layout_below="@+id/champTitre"
+            android:layout_centerHorizontal="true"
             app:srcCompat="@android:drawable/stat_sys_phone_call"
             tools:layout_editor_absoluteX="103dp"
             tools:layout_editor_absoluteY="119dp" />
 
         <TimePicker
             android:id="@+id/dateFin"
-            android:layout_width="200dp"
-            android:layout_height="90dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignTop="@+id/dateDebut"
-            android:headerBackground="@color/colorAccent"
-            tools:layout_editor_absoluteX="42dp"
-            tools:layout_editor_absoluteY="281dp" />
+            android:layout_width="190dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/boutonSelectionContact"
+            android:headerBackground="@color/colorAccent" />
 
         <RadioButton
             android:id="@+id/radioButtonRepas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/radioButtonCourses"
-            android:text="Repas"
-            tools:layout_editor_absoluteX="144dp"
-            tools:layout_editor_absoluteY="466dp" />
+            android:layout_below="@+id/champLieu"
+            android:layout_centerHorizontal="true"
+            android:text="Repas" />
 
         <RadioButton
             android:id="@+id/radioButtonCourses"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/champLieu"
-            android:text="Courses"
-            tools:layout_editor_absoluteX="39dp"
-            tools:layout_editor_absoluteY="466dp" />
+            android:layout_below="@id/champLieu"
+            android:layout_marginTop="10dp"
+            android:text="Courses"/>
 
         <RadioButton
             android:id="@+id/radioButtonClassique"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/radioButtonRepas"
-            android:text="Classique"
-            tools:layout_editor_absoluteX="255dp"
-            tools:layout_editor_absoluteY="466dp" />
+            android:layout_below="@+id/champLieu"
+            android:layout_alignParentRight="true"
+            android:text="Classique" />
 
         <TextView
             android:id="@+id/LabelVueEvenementCache"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
             android:text="Vue Evenement Cache"
             tools:layout_editor_absoluteX="139dp"
             tools:layout_editor_absoluteY="16dp" />
