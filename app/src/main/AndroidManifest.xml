@@ -44,7 +44,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".VueModifierEvenement" />
-        <activity android:name=".VueAjoutEvenementCache"></activity>
+        <activity android:name=".VueAjoutEvenementCache" />
+        <activity android:name=".VueConsulterEvenementCache" />
+        <activity android:name=".VueListeContactsCache"></activity>
     </application>
 
 </manifest>

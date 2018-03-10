@@ -46,7 +46,6 @@
             android:id="@+id/bouttonAjouterEvenement"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
             app:backgroundTint="@color/colorPrimaryDark"

@@ -76,11 +76,11 @@
             tools:layout_editor_absoluteY="281dp" />
 
         <RadioButton
-            android:id="@+id/radioButtonMenu"
+            android:id="@+id/radioButtonRepas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/radioButtonCourses"
-            android:text="Menu"
+            android:text="Repas"
             tools:layout_editor_absoluteX="144dp"
             tools:layout_editor_absoluteY="466dp" />
 
@@ -94,11 +94,11 @@
             tools:layout_editor_absoluteY="466dp" />
 
         <RadioButton
-            android:id="@+id/radioButtonRien"
+            android:id="@+id/radioButtonClassique"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/radioButtonMenu"
-            android:text="Rien"
+            android:layout_below="@+id/radioButtonRepas"
+            android:text="Classique"
             tools:layout_editor_absoluteX="255dp"
             tools:layout_editor_absoluteY="466dp" />
 
