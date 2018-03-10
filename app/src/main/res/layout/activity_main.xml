@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.projet.iagenda.iagenda.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@+id/listeEvenement"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/calendarView2"
+            />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/bouttonAfficheVueCalendrierCache"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:visibility="visible"
+            app:backgroundTint="@android:color/black"
+            app:rippleColor="@android:color/black"
+            app:srcCompat="@mipmap/ic_launcher_round"
+            tools:layout_editor_absoluteX="296dp"
+            tools:layout_editor_absoluteY="696dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/bouttonVueListe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bouttonAjouterEvenement"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            app:backgroundTint="@color/colorPrimaryDark"
+            app:layout_anchorGravity="right|bottom"
+            app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/bouttonAjouterEvenement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            app:backgroundTint="@color/colorPrimaryDark"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+        <CalendarView
+            android:id="@+id/calendarView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="47dp"
+            tools:layout_editor_absoluteX="18dp"
+            tools:layout_editor_absoluteY="47dp" />
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
