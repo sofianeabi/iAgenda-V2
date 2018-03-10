@@ -43,7 +43,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".VueModifierEvenement"></activity>
+        <activity android:name=".VueModifierEvenement" />
+        <activity android:name=".VueAjoutEvenementCache"></activity>
     </application>
 
 </manifest>
