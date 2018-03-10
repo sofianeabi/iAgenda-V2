@@ -18,7 +18,7 @@ public class VueConsulterEvenement extends AppCompatActivity {
         boutonModifierEvenement.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(VueConsulterEvenement.this, VueAjoutEvenement.class);
+                Intent intent = new Intent(VueConsulterEvenement.this, VueModifierEvenement.class);
                 startActivity(intent);
             }
         });

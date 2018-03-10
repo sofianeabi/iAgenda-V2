@@ -123,7 +123,7 @@
             android:text="Notes" />
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/boutonModifierEvenement2"
+            android:id="@+id/boutonModifierEvenement"
             android:layout_width="54dp"
             android:layout_height="51dp"
             android:layout_alignParentBottom="true"
@@ -131,6 +131,16 @@
             android:clickable="true"
             app:backgroundTint="@color/colorPrimary"
             app:srcCompat="@android:drawable/ic_menu_edit" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/boutonRetour"
+            android:layout_width="54dp"
+            android:layout_height="51dp"
+            android:layout_toLeftOf="@id/boutonModifierEvenement"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            app:backgroundTint="@color/colorPrimary"
+            app:srcCompat="?attr/actionModeCloseDrawable" />
 
 
     </RelativeLayout>
