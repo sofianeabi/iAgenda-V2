@@ -7,8 +7,13 @@
     tools:context="com.projet.iagenda.iagenda.VueModifierEvenement">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:id="@+id/relativeLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <EditText
@@ -19,6 +24,7 @@
             android:layout_marginTop="26dp"
             android:layout_toStartOf="@+id/boutonModifierEvenement"
             android:text="Titre"
+            android:background="@drawable/linearborder2"
             android:textAlignment="center"
             android:textSize="24sp"
             android:visibility="visible"
@@ -30,6 +36,7 @@
             android:layout_height="44dp"
             android:layout_alignStart="@+id/LabelLieu"
             android:layout_below="@+id/LabelTitre"
+            android:background="@drawable/linearborder2"
             android:text="Contact"
             android:textAlignment="center"
             android:textSize="24sp"
@@ -42,6 +49,7 @@
             android:layout_height="45dp"
             android:layout_below="@+id/LabelContact"
             android:layout_toStartOf="@+id/boutonRetour"
+            android:background="@drawable/linearborder2"
             android:text="Lieu"
             android:textAlignment="center"
             android:textSize="24sp"
@@ -145,6 +153,7 @@
         android:layout_centerHorizontal="true"
         android:text="Vue Modifier Evenement"
         android:visibility="visible"
-        tools:layout_editor_absoluteX="222dp"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout2" />
 </android.support.constraint.ConstraintLayout>
