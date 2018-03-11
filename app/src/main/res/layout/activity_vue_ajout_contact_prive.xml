@@ -7,10 +7,13 @@
 
 
     <RelativeLayout
-        android:layout_width="604dp"
-        android:layout_height="825dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <EditText
             android:id="@+id/editText5"
@@ -94,7 +97,7 @@
             tools:layout_editor_absoluteY="497dp" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/editTextNomFemmeUn"
             android:layout_width="417dp"
             android:layout_height="33dp"
             android:layout_alignStart="@+id/imageView"
@@ -151,7 +154,7 @@
             android:id="@+id/imageButton"
             android:layout_width="38dp"
             android:layout_height="37dp"
-            android:layout_alignTop="@+id/editText2"
+            android:layout_alignTop="@+id/editTextNomFemmeUn"
             android:layout_marginLeft="@dimen/icons"
             android:background="@android:color/white"
             android:tint="@color/colorAccent"
@@ -165,7 +168,7 @@
             android:layout_height="32dp"
 
             android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/editText2"
+            android:layout_alignStart="@+id/editTextNomFemmeUn"
             android:background="@color/colorAccent"
             android:text="Ajout de contact"
             android:textAlignment="center"

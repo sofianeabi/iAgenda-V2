@@ -11,7 +11,7 @@ public class VueTableauDeChasse extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vue_suppression_evenement);
+        setContentView(R.layout.activity_vue_tableau_de_chasse);
 
     }
 }

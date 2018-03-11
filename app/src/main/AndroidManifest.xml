@@ -29,6 +29,12 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".VueCalendrierCache" />
         <activity android:name=".VueListeCachee"></activity>
+        <activity android:name=".VueTableauDeChasse">
+            <intent-filter>
+                <action android:name="com.company.package.FOO"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".VueAjoutContactPrive">
             <intent-filter>
                 <action android:name="com.company.package.FOO"/>
@@ -40,6 +46,8 @@
                 <action android:name="com.company.package.FOO"/>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
+
+
         </activity>
     </application>
 
