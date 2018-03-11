@@ -11,6 +11,15 @@
         android:layout_height="match_parent">
 
         <android.support.design.widget.FloatingActionButton
+            android:id="@+id/boutonAfficherTableauDeChasse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/bouttonAfficherVueListeCachee"
+            android:layout_above="@+id/boutonSortirModeCache"
+            android:clickable="true"
+            app:srcCompat="?attr/actionModePasteDrawable" />
+
+        <android.support.design.widget.FloatingActionButton
             android:id="@+id/bouttonAjouterEvenementCache"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

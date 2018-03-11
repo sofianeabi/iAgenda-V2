@@ -43,7 +43,8 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".VueConnexion"></activity>
+        <activity android:name=".VueConnexion" />
+        <activity android:name=".VueModifierEvenementCache"></activity>
     </application>
 
 </manifest>
