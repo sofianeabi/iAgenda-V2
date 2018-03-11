@@ -25,6 +25,8 @@
             android:id="@+id/calendarView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/textVueListeCachee"
+            android:layout_centerHorizontal="true"
             tools:layout_editor_absoluteX="31dp"
             tools:layout_editor_absoluteY="95dp" />
 
@@ -32,6 +34,8 @@
             android:id="@+id/textVueListeCachee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
             android:text="Vue Liste Cachee"
             android:textColor="@color/colorAccent"
             tools:layout_editor_absoluteX="177dp"

@@ -17,7 +17,7 @@ public class VueAjoutEvenement extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton bouttonValider = (FloatingActionButton) findViewById(R.id.bouttonValider);
+        FloatingActionButton bouttonValider = (FloatingActionButton) findViewById(R.id.boutonValider);
         bouttonValider.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
