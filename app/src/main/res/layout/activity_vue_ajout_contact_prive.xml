@@ -16,12 +16,12 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/editTextTelephone"
             style="?attr/editTextStyle"
             android:layout_width="417dp"
             android:layout_height="33dp"
             android:layout_alignEnd="@+id/imageView"
-            android:layout_below="@+id/editText3"
+            android:layout_below="@+id/editTextPrenom"
             android:layout_marginTop="18dp"
             android:background="@drawable/linearborder"
             android:ems="10"
@@ -32,11 +32,11 @@
             tools:layout_editor_absoluteY="440dp" />
 
         <EditText
-            android:id="@+id/editText9"
+            android:id="@+id/editTextNote"
             android:layout_width="353dp"
             android:layout_height="33dp"
-            android:layout_alignStart="@+id/editText7"
-            android:layout_below="@+id/editText7"
+            android:layout_alignStart="@+id/editTextMail"
+            android:layout_below="@+id/editTextMail"
             android:layout_marginTop="35dp"
             android:background="@drawable/linearborder"
             android:ems="10"
@@ -50,18 +50,18 @@
             android:id="@+id/numberPicker"
             android:layout_width="41dp"
             android:layout_height="47dp"
-            android:layout_alignBottom="@+id/editText9"
-            android:layout_alignEnd="@+id/editText7"
+            android:layout_alignBottom="@+id/editTextNote"
+            android:layout_alignEnd="@+id/editTextMail"
             android:background="@drawable/linearborder"
             tools:layout_editor_absoluteX="466dp"
             tools:layout_editor_absoluteY="614dp" />
 
         <ImageButton
-            android:id="@+id/imageButton8"
+            android:id="@+id/imageButtonNote"
             android:layout_width="38dp"
             android:layout_height="37dp"
             android:layout_alignParentStart="true"
-            android:layout_alignTop="@+id/editText9"
+            android:layout_alignTop="@+id/editTextNote"
             android:layout_marginLeft="@dimen/icons"
             android:background="@android:color/white"
             android:tint="@color/colorAccent"
@@ -70,11 +70,11 @@
             tools:layout_editor_absoluteY="622dp" />
 
         <ImageButton
-            android:id="@+id/imageButton6"
+            android:id="@+id/imageButtonMail"
             android:layout_width="38dp"
             android:layout_height="37dp"
-            android:layout_above="@+id/editText9"
-            android:layout_alignStart="@+id/imageButton5"
+            android:layout_above="@+id/editTextNote"
+            android:layout_alignStart="@+id/imageButtonAdresse"
             android:background="@android:color/white"
             android:tint="@color/colorAccent"
             app:srcCompat="@android:drawable/ic_dialog_email"
@@ -82,11 +82,11 @@
             tools:layout_editor_absoluteY="554dp" />
 
         <EditText
-            android:id="@+id/editText6"
+            android:id="@+id/editTextAdresse"
             android:layout_width="417dp"
             android:layout_height="33dp"
-            android:layout_alignStart="@+id/editText5"
-            android:layout_below="@+id/editText5"
+            android:layout_alignStart="@+id/editTextTelephone"
+            android:layout_below="@+id/editTextTelephone"
             android:layout_marginTop="19dp"
             android:background="@drawable/linearborder"
             android:ems="10"
@@ -97,7 +97,7 @@
             tools:layout_editor_absoluteY="497dp" />
 
         <EditText
-            android:id="@+id/editTextNomFemmeUn"
+            android:id="@+id/editTextNom"
             android:layout_width="417dp"
             android:layout_height="33dp"
             android:layout_alignStart="@+id/imageView"
@@ -112,11 +112,11 @@
             tools:layout_editor_absoluteY="315dp" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/editTextPrenom"
             android:layout_width="417dp"
             android:layout_height="33dp"
-            android:layout_alignStart="@+id/editText5"
-            android:layout_below="@+id/imageButton"
+            android:layout_alignStart="@+id/editTextTelephone"
+            android:layout_below="@+id/imageButtonNom"
             android:layout_marginTop="19dp"
             android:background="@drawable/linearborder"
             android:ems="10"
@@ -127,11 +127,11 @@
             tools:layout_editor_absoluteY="379dp" />
 
         <ImageButton
-            android:id="@+id/imageButton7"
+            android:id="@+id/imageButtonTelephone"
             android:layout_width="38dp"
             android:layout_height="37dp"
-            android:layout_above="@+id/editText6"
-            android:layout_alignStart="@+id/imageButton5"
+            android:layout_above="@+id/editTextAdresse"
+            android:layout_alignStart="@+id/imageButtonAdresse"
             android:background="@android:color/white"
             android:tint="@color/colorAccent"
             app:srcCompat="@android:drawable/ic_menu_call"
@@ -143,7 +143,7 @@
             android:layout_width="414dp"
             android:layout_height="241dp"
             android:layout_alignParentEnd="true"
-            android:layout_below="@+id/textView5"
+            android:layout_below="@+id/textViewTitre"
             android:layout_marginEnd="71dp"
             android:layout_marginLeft="@dimen/icons"
             app:srcCompat="@drawable/ic_launcher_background"
@@ -151,10 +151,10 @@
             tools:layout_editor_absoluteY="54dp" />
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/imageButtonNom"
             android:layout_width="38dp"
             android:layout_height="37dp"
-            android:layout_alignTop="@+id/editTextNomFemmeUn"
+            android:layout_alignTop="@+id/editTextNom"
             android:layout_marginLeft="@dimen/icons"
             android:background="@android:color/white"
             android:tint="@color/colorAccent"
@@ -163,12 +163,12 @@
             tools:layout_editor_absoluteY="314dp" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/textViewTitre"
             android:layout_width="413dp"
             android:layout_height="32dp"
 
             android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/editTextNomFemmeUn"
+            android:layout_alignStart="@+id/editTextNom"
             android:background="@color/colorAccent"
             android:text="Ajout de contact"
             android:textAlignment="center"
@@ -177,11 +177,11 @@
             tools:layout_editor_absoluteY="5dp" />
 
         <EditText
-            android:id="@+id/editText7"
+            android:id="@+id/editTextMail"
             android:layout_width="417dp"
             android:layout_height="33dp"
-            android:layout_alignStart="@+id/editText6"
-            android:layout_below="@+id/editText6"
+            android:layout_alignStart="@+id/editTextAdresse"
+            android:layout_below="@+id/editTextAdresse"
             android:layout_marginTop="18dp"
             android:background="@drawable/linearborder"
             android:ems="10"
@@ -196,7 +196,7 @@
             android:layout_width="150dp"
             android:layout_height="68dp"
             android:layout_alignEnd="@+id/numberPicker"
-            android:layout_below="@+id/imageButton8"
+            android:layout_below="@+id/imageButtonNote"
             android:layout_marginTop="44dp"
             android:clickable="true"
             android:scaleType="center"
@@ -206,10 +206,10 @@
             tools:layout_editor_absoluteY="718dp" />
 
         <ImageButton
-            android:id="@+id/imageButton5"
+            android:id="@+id/imageButtonAdresse"
             android:layout_width="38dp"
             android:layout_height="37dp"
-            android:layout_alignTop="@+id/editText6"
+            android:layout_alignTop="@+id/editTextAdresse"
             android:layout_marginLeft="@dimen/icons"
             android:background="@android:color/white"
             android:tint="@color/colorAccent"
