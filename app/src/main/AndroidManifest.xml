@@ -28,19 +28,22 @@
             android:label="@string/title_activity_vue_ajout_evenement"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".VueCalendrierCache" />
-        <activity android:name=".VueListeCachee"></activity>
+        <activity android:name=".VueListeCachee" />
         <activity android:name=".VueAjoutContactPrive">
             <intent-filter>
-                <action android:name="com.company.package.FOO"/>
+                <action android:name="com.company.package.FOO" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name=".VueModificationSuppressionContact">
             <intent-filter>
-                <action android:name="com.company.package.FOO"/>
+                <action android:name="com.company.package.FOO" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".VueConnexion"></activity>
     </application>
 
 </manifest>

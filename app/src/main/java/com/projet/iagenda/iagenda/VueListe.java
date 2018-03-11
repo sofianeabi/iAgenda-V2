@@ -13,14 +13,13 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class VueListe extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vue_liste);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         FloatingActionButton bouttonAjoutEvenement = (FloatingActionButton) findViewById(R.id.bouttonAjoutEvenement);
         bouttonAjoutEvenement.setOnClickListener(new View.OnClickListener() {
