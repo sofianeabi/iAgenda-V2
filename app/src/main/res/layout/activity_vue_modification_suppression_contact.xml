@@ -95,7 +95,7 @@
             tools:layout_editor_absoluteY="497dp" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/editTextNomFemmeUn"
             android:layout_width="417dp"
             android:layout_height="33dp"
             android:layout_alignStart="@+id/imageView"
@@ -152,7 +152,7 @@
             android:id="@+id/imageButton"
             android:layout_width="38dp"
             android:layout_height="37dp"
-            android:layout_alignTop="@+id/editText2"
+            android:layout_alignTop="@+id/editTextNomFemmeUn"
             android:layout_marginLeft="@dimen/icons"
             android:background="@android:color/white"
             android:tint="@color/colorAccent"
@@ -166,7 +166,7 @@
             android:layout_height="32dp"
 
             android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/editText2"
+            android:layout_alignStart="@+id/editTextNomFemmeUn"
             android:background="@color/colorAccent"
             android:text="modification de contact"
             android:textAlignment="center"
