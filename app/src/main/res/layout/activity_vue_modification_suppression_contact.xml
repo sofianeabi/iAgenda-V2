@@ -190,7 +190,7 @@
             tools:layout_editor_absoluteY="555dp" />
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/floatingActionButton2"
+            android:id="@+id/boutonValiderModificationContactCache"
             android:layout_width="150dp"
             android:layout_height="68dp"
             android:layout_alignEnd="@+id/numberPicker"
@@ -204,7 +204,7 @@
             tools:layout_editor_absoluteY="718dp" />
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/floatingActionButton3"
+            android:id="@+id/boutonSupprimerContactCache"
             android:layout_width="72dp"
             android:layout_height="68dp"
             android:layout_alignEnd="@+id/editText9"
@@ -220,7 +220,7 @@
             android:id="@+id/AlertTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/floatingActionButton3"
+            android:layout_below="@+id/boutonSupprimerContactCache"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:text="Êtes-vous sûr de vouloir supprimer ce contact ? "
