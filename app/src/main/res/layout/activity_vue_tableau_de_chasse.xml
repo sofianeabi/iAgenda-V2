@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:id="@+id/relativeLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <TextView
@@ -65,10 +69,10 @@
             android:id="@+id/imageButtonFemmeUne"
             android:layout_width="72dp"
             android:layout_height="73dp"
-            android:background="@color/colorText"
             android:layout_alignStart="@+id/textViewListeContact"
             android:layout_below="@+id/textViewListeContact"
             android:layout_marginTop="52dp"
+            android:background="@color/colorText"
             android:padding="0dp"
             android:scaleType="fitEnd"
             app:srcCompat="@drawable/woman" />
@@ -83,7 +87,7 @@
             android:background="@color/colorText"
             android:padding="0dp"
             android:scaleType="fitEnd"
-            app:srcCompat="@drawable/woman22" />
+            app:srcCompat="@drawable/woman2" />
 
         <ImageButton
             android:id="@+id/imageButtonFemmeTrois"
@@ -107,7 +111,7 @@
             android:background="@color/colorText"
             android:padding="0dp"
             android:scaleType="fitEnd"
-            app:srcCompat="@drawable/woman44" />
+            app:srcCompat="@drawable/woman4" />
 
 
         <EditText
@@ -119,9 +123,9 @@
             android:layout_toEndOf="@+id/imageButtonFemmeUne"
             android:background="@drawable/linearborder"
             android:ems="10"
+            android:gravity="center"
             android:inputType="textPersonName"
             android:text="Martin"
-            android:gravity="center"
             android:textColor="@color/colorAccent" />
 
 
@@ -133,9 +137,9 @@
             android:layout_toEndOf="@+id/editTextNomFemmeUn"
             android:background="@drawable/linearborder"
             android:ems="10"
+            android:gravity="center"
             android:inputType="textPersonName"
             android:text="Isabelle"
-            android:gravity="center"
             android:textColor="@color/colorAccent" />
 
 
