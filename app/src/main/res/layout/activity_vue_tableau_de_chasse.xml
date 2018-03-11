@@ -79,20 +79,20 @@
             android:layout_height="73dp"
             android:layout_alignStart="@+id/imageButtonFemmeUne"
             android:layout_below="@+id/imageButtonFemmeUne"
-            android:background="@color/colorText"
             android:layout_marginTop="52dp"
+            android:background="@color/colorText"
             android:padding="0dp"
             android:scaleType="fitEnd"
-            app:srcCompat="@drawable/woman2" />
+            app:srcCompat="@drawable/woman22" />
 
         <ImageButton
             android:id="@+id/imageButtonFemmeTrois"
             android:layout_width="72dp"
             android:layout_height="73dp"
-            android:background="@color/colorText"
             android:layout_alignStart="@+id/imageButtonFemmeDeux"
             android:layout_below="@+id/imageButtonFemmeDeux"
             android:layout_marginTop="52dp"
+            android:background="@color/colorText"
             android:padding="0dp"
             android:scaleType="fitEnd"
             app:srcCompat="@drawable/woman3" />
@@ -101,13 +101,13 @@
             android:id="@+id/imageButtonFemmeQuatre"
             android:layout_width="72dp"
             android:layout_height="73dp"
-            android:background="@color/colorText"
             android:layout_alignStart="@+id/imageButtonFemmeTrois"
             android:layout_below="@+id/imageButtonFemmeTrois"
             android:layout_marginTop="52dp"
+            android:background="@color/colorText"
             android:padding="0dp"
             android:scaleType="fitEnd"
-            app:srcCompat="@drawable/woman4" />
+            app:srcCompat="@drawable/woman44" />
 
 
         <EditText
