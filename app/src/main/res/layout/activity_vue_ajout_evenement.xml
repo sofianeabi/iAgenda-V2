@@ -107,7 +107,7 @@
             tools:layout_editor_absoluteY="16dp" />
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/boutonValider"
+            android:id="@+id/boutonValiderVueAjoutEvenement"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -117,10 +117,10 @@
             app:srcCompat="@android:drawable/checkbox_on_background" />
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/boutonRetour"
+            android:id="@+id/boutonRetourVueAjoutEvenement"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@id/boutonValider"
+            android:layout_toLeftOf="@id/boutonValiderVueAjoutEvenement"
             android:layout_alignParentBottom="true"
             android:clickable="true"
             app:backgroundTint="@color/colorPrimary"

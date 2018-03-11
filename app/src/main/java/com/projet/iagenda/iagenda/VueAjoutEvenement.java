@@ -15,8 +15,8 @@ public class VueAjoutEvenement extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vue_ajout_evenement);
 
-        FloatingActionButton bouttonValider = (FloatingActionButton) findViewById(R.id.boutonValider);
-        bouttonValider.setOnClickListener(new View.OnClickListener() {
+        FloatingActionButton boutonValiderVueAjoutEvenement = (FloatingActionButton) findViewById(R.id.boutonValiderVueAjoutEvenement);
+        boutonValiderVueAjoutEvenement.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(VueAjoutEvenement.this, VueConsulterEvenement.class);
@@ -24,8 +24,8 @@ public class VueAjoutEvenement extends AppCompatActivity {
             }
         });
 
-        FloatingActionButton boutonRetour = (FloatingActionButton) findViewById(R.id.boutonRetour);
-        bouttonValider.setOnClickListener(new View.OnClickListener() {
+        FloatingActionButton boutonRetourVueAjoutEvenement = (FloatingActionButton) findViewById(R.id.boutonRetourVueAjoutEvenement);
+        boutonRetourVueAjoutEvenement.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(VueAjoutEvenement.this, MainActivity.class);
