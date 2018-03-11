@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/TextViewTitre"
+            android:layout_width="413dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorAccent"
+            android:text="Tableau de chasse"
+            android:textAlignment="center"
+            android:textColor="@color/colorText" />
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/bouttonAjoutContactPrive"
+            android:layout_width="150dp"
+            android:layout_height="68dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="81dp"
+            android:layout_toEndOf="@+id/TextViewTitre"
+            android:clickable="true"
+            android:scaleType="center"
+            app:fabSize="normal"
+            app:srcCompat="@android:drawable/checkbox_on_background" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
