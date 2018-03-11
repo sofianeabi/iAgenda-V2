@@ -34,7 +34,7 @@
         android:id="@+id/editText8"
         android:layout_width="166dp"
         android:layout_height="77dp"
-        android:background="@color/colorAccent"
+        android:background="@color/colorPrimary"
         android:ems="10"
         android:inputType="time"
         android:text="15:30"
@@ -47,7 +47,7 @@
         android:id="@+id/editText10"
         android:layout_width="167dp"
         android:layout_height="80dp"
-        android:background="@color/colorAccent"
+        android:background="@color/colorPrimary"
         android:ems="10"
         android:inputType="time"
         android:text="16:30"
@@ -103,8 +103,8 @@
         android:inputType="textMultiLine"
         android:text="Notes"
         android:textAlignment="center"
-        tools:layout_editor_absoluteX="191dp"
-        tools:layout_editor_absoluteY="704dp" />
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="641dp" />
 
     <TextView
         android:id="@+id/textView7"
@@ -114,5 +114,15 @@
         android:textSize="24sp"
         tools:layout_editor_absoluteX="69dp"
         tools:layout_editor_absoluteY="16dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/boutonModifierEvenement"
+        android:layout_width="54dp"
+        android:layout_height="51dp"
+        android:clickable="true"
+        app:backgroundTint="@color/colorPrimary"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        tools:layout_editor_absoluteX="425dp"
+        tools:layout_editor_absoluteY="771dp" />
 
 </android.support.constraint.ConstraintLayout>

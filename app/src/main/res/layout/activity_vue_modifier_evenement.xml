@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.projet.iagenda.iagenda.VueModifierEvenement">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/LabelTitre"
+            android:layout_width="506dp"
+            android:layout_height="44dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="26dp"
+            android:layout_toStartOf="@+id/boutonModifierEvenement"
+            android:text="Titre"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:visibility="visible"
+            tools:text="Couscous royal" />
+
+        <EditText
+            android:id="@+id/LabelContact"
+            android:layout_width="400dp"
+            android:layout_height="44dp"
+            android:layout_alignStart="@+id/LabelLieu"
+            android:layout_below="@+id/LabelTitre"
+            android:text="Contact"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:visibility="visible"
+            tools:text="Martin" />
+
+        <EditText
+            android:id="@+id/LabelLieu"
+            android:layout_width="400dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/LabelContact"
+            android:layout_toStartOf="@+id/boutonRetour"
+            android:text="Lieu"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:visibility="visible"
+            tools:text="15 rue de la République" />
+
+        <TimePicker
+            android:id="@+id/dateDebut"
+            android:layout_width="190dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/LabelLieu"
+            android:headerBackground="@color/colorPrimary" />
+
+        <TimePicker
+            android:id="@+id/dateFin"
+            android:layout_width="190dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/LabelLieu"
+            android:headerBackground="@color/colorPrimary" />
+
+
+        <EditText
+            android:id="@+id/texteLieu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateDebut"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Lieu" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCourses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/texteLieu"
+            android:layout_marginTop="10dp"
+            android:text="Courses" />
+
+
+        <RadioButton
+            android:id="@+id/radioButtonRepas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/texteLieu"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Repas" />
+
+
+        <RadioButton
+            android:id="@+id/radioButtonClassique"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/texteLieu"
+            android:layout_marginTop="10dp"
+            android:text="Classique" />
+
+        <EditText
+            android:id="@+id/texteNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioButtonRepas"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:text="Notes" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/boutonModifierEvenement"
+            android:layout_width="54dp"
+            android:layout_height="51dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            app:backgroundTint="@color/colorPrimary"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/boutonRetour"
+            android:layout_width="54dp"
+            android:layout_height="51dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/boutonModifierEvenement"
+            android:clickable="true"
+            app:backgroundTint="@color/colorPrimary"
+            app:srcCompat="?attr/actionModeCloseDrawable" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/LabelVueModifierEvenement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:text="Vue Modifier Evenement"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="222dp"
+        tools:layout_editor_absoluteY="0dp" />
+</android.support.constraint.ConstraintLayout>

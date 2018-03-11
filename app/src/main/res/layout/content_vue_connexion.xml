@@ -34,8 +34,16 @@
             android:text="Mot de passe" />
     </android.support.design.widget.TextInputLayout>
 
-    <Button
-        android:id="@+id/button"
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/boutonConnexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Se connecter"
+        tools:layout_editor_absoluteX="238dp"
+        tools:layout_editor_absoluteY="540dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/boutonAnnuler"
         android:layout_width="wrap_content"
         android:layout_height="52dp"
         android:text="Se connecter"

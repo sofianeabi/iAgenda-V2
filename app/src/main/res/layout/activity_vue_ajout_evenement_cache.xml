@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.projet.iagenda.iagenda.VueAjoutEvenement">
+    tools:context="com.projet.iagenda.iagenda.VueAjoutEvenementCache">
+
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="251dp">
+        android:layout_height="match_parent">
 
         <EditText
             android:id="@+id/texteNotes"
@@ -42,7 +41,7 @@
             android:layout_alignParentLeft="true"
             android:layout_marginTop="30dp"
             android:layout_below="@+id/boutonSelectionContact"
-            android:headerBackground="@color/colorPrimary" />
+            android:headerBackground="@color/colorAccent" />
 
         <EditText
             android:id="@+id/champLieu"
@@ -71,7 +70,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginTop="30dp"
             android:layout_below="@id/boutonSelectionContact"
-            android:headerBackground="@color/colorPrimary" />
+            android:headerBackground="@color/colorAccent" />
 
         <RadioButton
             android:id="@+id/radioButtonRepas"
@@ -98,11 +97,11 @@
             android:text="Classique" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/LabelVueEvenementCache"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Vue Ajout Evenement"
             android:layout_centerHorizontal="true"
+            android:text="Vue Evenement Cache"
             tools:layout_editor_absoluteX="139dp"
             tools:layout_editor_absoluteY="16dp" />
 
@@ -113,19 +112,18 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:clickable="true"
-            app:backgroundTint="@color/colorPrimary"
+            app:backgroundTint="@color/colorAccent"
             app:srcCompat="@android:drawable/checkbox_on_background" />
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/boutonRetour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@id/boutonValider"
             android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/boutonValider"
             android:clickable="true"
-            app:backgroundTint="@color/colorPrimary"
+            app:backgroundTint="@color/colorAccent"
             app:srcCompat="?attr/actionModeCloseDrawable" />
 
     </RelativeLayout>
-
-</android.support.design.widget.CoordinatorLayout>
+</android.support.constraint.ConstraintLayout>

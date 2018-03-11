@@ -18,9 +18,10 @@
             />
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/bouttonAfficheVueCalendrierCache"
+            android:id="@+id/boutonConnexion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/bouttonAjouterEvenement"
             android:layout_alignParentBottom="true"
             android:clickable="true"
             android:visibility="visible"
@@ -45,7 +46,6 @@
             android:id="@+id/bouttonAjouterEvenement"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
             app:backgroundTint="@color/colorPrimaryDark"

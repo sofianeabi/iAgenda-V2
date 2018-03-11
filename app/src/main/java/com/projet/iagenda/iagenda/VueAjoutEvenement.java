@@ -1,5 +1,6 @@
 package com.projet.iagenda.iagenda;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -16,12 +17,21 @@ public class VueAjoutEvenement extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.bouttonValider);
-        fab.setOnClickListener(new View.OnClickListener() {
+        FloatingActionButton bouttonValider = (FloatingActionButton) findViewById(R.id.boutonValider);
+        bouttonValider.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent intent = new Intent(VueAjoutEvenement.this, VueConsulterEvenement.class);
+                startActivity(intent);
+            }
+        });
+
+        FloatingActionButton boutonRetour = (FloatingActionButton) findViewById(R.id.boutonRetour);
+        bouttonValider.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(VueAjoutEvenement.this, MainActivity.class);
+                startActivity(intent);
             }
         });
     }

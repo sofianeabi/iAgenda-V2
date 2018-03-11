@@ -37,11 +37,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        FloatingActionButton boutonAfficherVueCalendrierCache = (FloatingActionButton) findViewById(R.id.bouttonAfficheVueCalendrierCache);
-        boutonAfficherVueCalendrierCache.setOnClickListener(new View.OnClickListener() {
+        FloatingActionButton boutonConnexion = (FloatingActionButton) findViewById(R.id.boutonConnexion);
+        boutonConnexion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, VueCalendrierCache.class);
+                Intent intent = new Intent(MainActivity.this, VueConnexion.class);
                 startActivity(intent);
             }
         });
