@@ -13,7 +13,7 @@ public class VueConsulterEvenement extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vue_consulter_evenement2);
+        setContentView(R.layout.activity_vue_consulter_evenement);
         FloatingActionButton boutonModifierEvenement = (FloatingActionButton) findViewById(R.id.boutonModifierEvenement);
         boutonModifierEvenement.setOnClickListener(new View.OnClickListener() {
             @Override
