@@ -34,6 +34,315 @@
             app:fabSize="normal"
             app:srcCompat="@android:drawable/checkbox_on_background" />
 
+        <TextView
+            android:id="@+id/textViewListeContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/TextViewTitre"
+            android:layout_below="@+id/TextViewTitre"
+            android:layout_marginTop="63dp"
+            android:text="Liste des contacts" />
+
+        <TextView
+            android:id="@+id/textViewScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/TextViewTitre"
+            android:layout_alignTop="@+id/textViewListeContact"
+            android:layout_marginEnd="69dp"
+            android:text="Score" />
+
+        <TextView
+            android:id="@+id/textViewNbRdv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewScore"
+            android:layout_alignBottom="@+id/textViewScore"
+            android:layout_alignEnd="@+id/TextViewTitre"
+            android:text="Nb RDV" />
+
+        <ImageButton
+            android:id="@+id/imageButtonFemmeUne"
+            android:layout_width="72dp"
+            android:layout_height="73dp"
+            android:background="@color/colorText"
+            android:layout_alignStart="@+id/textViewListeContact"
+            android:layout_below="@+id/textViewListeContact"
+            android:layout_marginTop="52dp"
+            android:padding="0dp"
+            android:scaleType="fitEnd"
+            app:srcCompat="@drawable/woman" />
+
+        <ImageButton
+            android:id="@+id/imageButtonFemmeDeux"
+            android:layout_width="72dp"
+            android:layout_height="73dp"
+            android:layout_alignStart="@+id/imageButtonFemmeUne"
+            android:layout_below="@+id/imageButtonFemmeUne"
+            android:background="@color/colorText"
+            android:layout_marginTop="52dp"
+            android:padding="0dp"
+            android:scaleType="fitEnd"
+            app:srcCompat="@drawable/woman2" />
+
+        <ImageButton
+            android:id="@+id/imageButtonFemmeTrois"
+            android:layout_width="72dp"
+            android:layout_height="73dp"
+            android:background="@color/colorText"
+            android:layout_alignStart="@+id/imageButtonFemmeDeux"
+            android:layout_below="@+id/imageButtonFemmeDeux"
+            android:layout_marginTop="52dp"
+            android:padding="0dp"
+            android:scaleType="fitEnd"
+            app:srcCompat="@drawable/woman3" />
+
+        <ImageButton
+            android:id="@+id/imageButtonFemmeQuatre"
+            android:layout_width="72dp"
+            android:layout_height="73dp"
+            android:background="@color/colorText"
+            android:layout_alignStart="@+id/imageButtonFemmeTrois"
+            android:layout_below="@+id/imageButtonFemmeTrois"
+            android:layout_marginTop="52dp"
+            android:padding="0dp"
+            android:scaleType="fitEnd"
+            app:srcCompat="@drawable/woman4" />
+
+
+        <EditText
+            android:id="@+id/editTextNomFemmeUn"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageButtonFemmeUne"
+            android:layout_marginStart="22dp"
+            android:layout_toEndOf="@+id/imageButtonFemmeUne"
+            android:background="@drawable/linearborder"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Martin"
+            android:gravity="center"
+            android:textColor="@color/colorAccent" />
+
+
+        <EditText
+            android:id="@+id/editTextPrenomFemmeUne"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageButtonFemmeDeux"
+            android:layout_toEndOf="@+id/editTextNomFemmeUn"
+            android:background="@drawable/linearborder"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Isabelle"
+            android:gravity="center"
+            android:textColor="@color/colorAccent" />
+
+
+        <EditText
+            android:id="@+id/editTextNoteFemmeUne"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTextRdvFemmeUne"
+            android:layout_alignBottom="@+id/editTextRdvFemmeUne"
+            android:layout_alignStart="@+id/textViewScore"
+            android:background="@drawable/linearborder"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="6"
+            android:textColor="@color/colorAccent" />
+
+
+        <EditText
+            android:id="@+id/editTextRdvFemmeUne"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@+id/imageButtonFemmeDeux"
+            android:layout_alignStart="@+id/textViewNbRdv"
+            android:background="@drawable/linearborder"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="3"
+            android:textColor="@color/colorAccent" />
+
+
+        <EditText
+            android:id="@+id/editTextNomFemmeDeux"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageButtonFemmeTrois"
+            android:layout_alignStart="@+id/editTextNomFemmeUn"
+            android:background="@drawable/linearborder"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="Stratow"
+            android:textColor="@color/colorAccent" />
+
+
+        <EditText
+            android:id="@+id/editTextPrenomFemmeDeux"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBaseline="@+id/editTextNomFemmeDeux"
+            android:layout_alignBottom="@+id/editTextNomFemmeDeux"
+            android:layout_toEndOf="@+id/editTextNomFemmeDeux"
+            android:background="@drawable/linearborder"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="Yvana"
+            android:textColor="@color/colorAccent" />
+
+
+        <EditText
+            android:id="@+id/editTextNoteFemmeDeux"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTextPrenomFemmeDeux"
+            android:layout_alignBottom="@+id/editTextPrenomFemmeDeux"
+            android:layout_alignStart="@+id/editTextNoteFemmeUne"
+            android:background="@drawable/linearborder"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="8"
+            android:textColor="@color/colorAccent" />
+
+
+        <EditText
+            android:id="@+id/editTextRdvFemmeDeux"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTextNoteFemmeDeux"
+            android:layout_alignBottom="@+id/editTextNoteFemmeDeux"
+            android:layout_alignStart="@+id/editTextRdvFemmeUne"
+            android:background="@drawable/linearborder"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="2"
+            android:textColor="@color/colorAccent" />
+
+
+        <EditText
+            android:id="@+id/editTextNomFemmeTrois"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageButtonFemmeQuatre"
+            android:layout_alignStart="@+id/editTextNomFemmeDeux"
+            android:background="@drawable/linearborder"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="Fernand"
+            android:textColor="@color/colorAccent" />
+
+
+        <EditText
+            android:id="@+id/editTextPrenomFemmeTrois"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTextNomFemmeTrois"
+            android:layout_alignBottom="@+id/editTextNomFemmeTrois"
+            android:layout_toEndOf="@+id/editTextNomFemmeTrois"
+            android:background="@drawable/linearborder"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="Yhira"
+            android:textColor="@color/colorAccent" />
+
+
+        <EditText
+            android:id="@+id/editTextNoteFemmeTrois"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTextPrenomFemmeTrois"
+            android:layout_alignBottom="@+id/editTextPrenomFemmeTrois"
+            android:layout_alignStart="@+id/editTextNoteFemmeDeux"
+            android:background="@drawable/linearborder"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="7"
+            android:textColor="@color/colorAccent" />
+
+
+        <EditText
+            android:id="@+id/editTextRdvFemmeTrois"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTextNoteFemmeTrois"
+            android:layout_alignBottom="@+id/editTextNoteFemmeTrois"
+            android:layout_alignStart="@+id/editTextRdvFemmeDeux"
+            android:background="@drawable/linearborder"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="1"
+            android:textColor="@color/colorAccent" />
+
+
+        <EditText
+            android:id="@+id/editTextNomFemmeQuatre"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageButtonFemmeQuatre"
+            android:layout_alignStart="@+id/editTextNomFemmeTrois"
+            android:background="@drawable/linearborder"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="Yuri"
+            android:textColor="@color/colorAccent" />
+
+
+        <EditText
+            android:id="@+id/editTextPrenomFemmeQuatre"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageButtonFemmeQuatre"
+            android:layout_toEndOf="@+id/editTextNomFemmeQuatre"
+            android:background="@drawable/linearborder"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="Marina"
+            android:textColor="@color/colorAccent" />
+
+
+        <EditText
+            android:id="@+id/editTextNoteFemmeQuatre"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editTextPrenomFemmeQuatre"
+            android:layout_alignBottom="@+id/editTextPrenomFemmeQuatre"
+            android:layout_alignStart="@+id/editTextNoteFemmeTrois"
+            android:background="@drawable/linearborder"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="9"
+            android:textColor="@color/colorAccent" />
+
+
+        <EditText
+            android:id="@+id/editTextRdvFemmeQuatre"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageButtonFemmeQuatre"
+            android:layout_alignStart="@+id/editTextRdvFemmeTrois"
+            android:background="@drawable/linearborder"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="2"
+            android:textColor="@color/colorAccent" />
 
     </RelativeLayout>
 

@@ -29,6 +29,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".VueCalendrierCache" />
         <activity android:name=".VueListeCachee"></activity>
+        <activity android:name=".VueTableauDeChasse"></activity>
         <activity android:name=".VueAjoutContactPrive">
             <intent-filter>
                 <action android:name="com.company.package.FOO"/>
