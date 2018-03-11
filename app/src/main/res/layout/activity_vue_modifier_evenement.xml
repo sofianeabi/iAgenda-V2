@@ -11,22 +11,13 @@
         android:layout_height="match_parent">
 
 
-        <TextView
-            android:id="@+id/LabelVueModifierEvenement"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginStart="101dp"
-            android:text="Vue Modifier Evenement"
-            android:visibility="visible" />
-
         <EditText
             android:id="@+id/LabelTitre"
             android:layout_width="506dp"
             android:layout_height="44dp"
-            android:layout_below="@+id/LabelVueModifierEvenement"
-            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="26dp"
+            android:layout_toStartOf="@+id/boutonModifierEvenement"
             android:text="Titre"
             android:textAlignment="center"
             android:textSize="24sp"
@@ -37,6 +28,7 @@
             android:id="@+id/LabelContact"
             android:layout_width="400dp"
             android:layout_height="44dp"
+            android:layout_alignStart="@+id/LabelLieu"
             android:layout_below="@+id/LabelTitre"
             android:text="Contact"
             android:textAlignment="center"
@@ -48,8 +40,8 @@
             android:id="@+id/LabelLieu"
             android:layout_width="400dp"
             android:layout_height="45dp"
-            android:layout_alignParentStart="true"
-            android:layout_below="@id/LabelContact"
+            android:layout_below="@+id/LabelContact"
+            android:layout_toStartOf="@+id/boutonRetour"
             android:text="Lieu"
             android:textAlignment="center"
             android:textSize="24sp"
@@ -77,10 +69,10 @@
             android:id="@+id/texteLieu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
             android:layout_below="@id/dateDebut"
             android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
             android:text="Lieu" />
 
         <RadioButton
@@ -96,8 +88,8 @@
             android:id="@+id/radioButtonRepas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
             android:layout_below="@id/texteLieu"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:text="Repas" />
 
@@ -115,11 +107,11 @@
             android:id="@+id/texteNotes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textMultiLine"
             android:layout_below="@id/radioButtonRepas"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
             android:text="Notes" />
 
         <android.support.design.widget.FloatingActionButton
@@ -136,12 +128,23 @@
             android:id="@+id/boutonRetour"
             android:layout_width="54dp"
             android:layout_height="51dp"
-            android:layout_toLeftOf="@id/boutonModifierEvenement"
             android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/boutonModifierEvenement"
             android:clickable="true"
             app:backgroundTint="@color/colorPrimary"
             app:srcCompat="?attr/actionModeCloseDrawable" />
 
 
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/LabelVueModifierEvenement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:text="Vue Modifier Evenement"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="222dp"
+        tools:layout_editor_absoluteY="0dp" />
 </android.support.constraint.ConstraintLayout>

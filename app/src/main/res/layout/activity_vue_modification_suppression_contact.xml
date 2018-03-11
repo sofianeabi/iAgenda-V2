@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="604dp"
+        android:layout_height="825dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <EditText
+            android:id="@+id/editText5"
+            style="?attr/editTextStyle"
+            android:layout_width="417dp"
+            android:layout_height="33dp"
+            android:layout_alignEnd="@+id/imageView"
+            android:layout_below="@+id/editText3"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/linearborder"
+            android:ems="10"
+            android:text="06 05 06 05 06"
+            android:inputType="phone"
+            android:textColor="@color/colorAccent"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="440dp" />
+
+        <EditText
+            android:id="@+id/editText9"
+            android:layout_width="353dp"
+            android:layout_height="33dp"
+            android:layout_alignStart="@+id/editText7"
+            android:layout_below="@+id/editText7"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/linearborder"
+            android:ems="10"
+            android:text="Une énigme"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorAccent"
+            tools:layout_editor_absoluteX="94dp"
+            tools:layout_editor_absoluteY="622dp" />
+
+        <NumberPicker
+            android:id="@+id/numberPicker"
+            android:layout_width="41dp"
+            android:layout_height="47dp"
+            android:layout_alignBottom="@+id/editText9"
+            android:layout_alignEnd="@+id/editText7"
+            android:background="@drawable/linearborder"
+            tools:layout_editor_absoluteX="466dp"
+            tools:layout_editor_absoluteY="614dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="38dp"
+            android:layout_height="37dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/editText9"
+            android:layout_marginLeft="@dimen/icons"
+            android:background="@android:color/white"
+            android:tint="@color/colorAccent"
+            app:srcCompat="@android:drawable/ic_menu_help"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="622dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="38dp"
+            android:layout_height="37dp"
+            android:layout_above="@+id/editText9"
+            android:layout_alignStart="@+id/imageButton5"
+            android:background="@android:color/white"
+            android:tint="@color/colorAccent"
+            app:srcCompat="@android:drawable/ic_dialog_email"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="554dp" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="417dp"
+            android:layout_height="33dp"
+            android:layout_alignStart="@+id/editText5"
+            android:layout_below="@+id/editText5"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/linearborder"
+            android:ems="10"
+            android:text="02 rue du janvier"
+            android:inputType="textPostalAddress"
+            android:textColor="@color/colorAccent"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="497dp" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="417dp"
+            android:layout_height="33dp"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="33dp"
+            android:background="@drawable/linearborder"
+            android:ems="10"
+            android:text="Martin"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorAccent"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="315dp" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="417dp"
+            android:layout_height="33dp"
+            android:layout_alignStart="@+id/editText5"
+            android:layout_below="@+id/imageButton"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/linearborder"
+            android:ems="10"
+            android:text="Isabelle"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorAccent"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="379dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="38dp"
+            android:layout_height="37dp"
+            android:layout_above="@+id/editText6"
+            android:layout_alignStart="@+id/imageButton5"
+            android:background="@android:color/white"
+            android:tint="@color/colorAccent"
+            app:srcCompat="@android:drawable/ic_menu_call"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="439dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="414dp"
+            android:layout_height="241dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textView5"
+            android:layout_marginEnd="71dp"
+            android:layout_marginLeft="@dimen/icons"
+            app:srcCompat="@drawable/woman"
+            tools:layout_editor_absoluteX="94dp"
+            tools:layout_editor_absoluteY="54dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="38dp"
+            android:layout_height="37dp"
+            android:layout_alignTop="@+id/editText2"
+            android:layout_marginLeft="@dimen/icons"
+            android:background="@android:color/white"
+            android:tint="@color/colorAccent"
+            app:srcCompat="@android:drawable/ic_menu_myplaces"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="314dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="413dp"
+            android:layout_height="32dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/editText2"
+            android:background="@color/colorAccent"
+            android:text="modification de contact"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            tools:layout_editor_absoluteX="94dp"
+            tools:layout_editor_absoluteY="5dp" />
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="417dp"
+            android:layout_height="33dp"
+            android:layout_alignStart="@+id/editText6"
+            android:layout_below="@+id/editText6"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/linearborder"
+            android:ems="10"
+            android:text="i.martin@gmail.com"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorAccent"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="555dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="150dp"
+            android:layout_height="68dp"
+            android:layout_alignEnd="@+id/numberPicker"
+            android:layout_below="@+id/imageButton8"
+            android:layout_marginTop="44dp"
+            android:clickable="true"
+            android:scaleType="center"
+            app:fabSize="normal"
+            app:srcCompat="@android:drawable/checkbox_on_background"
+            tools:layout_editor_absoluteX="514dp"
+            tools:layout_editor_absoluteY="718dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton3"
+            android:layout_width="72dp"
+            android:layout_height="68dp"
+            android:layout_alignEnd="@+id/editText9"
+            android:layout_alignTop="@+id/floatingActionButton2"
+            android:clickable="true"
+            app:fabSize="normal"
+            app:srcCompat="@android:drawable/ic_menu_delete"
+            tools:layout_editor_absoluteX="430dp"
+            tools:layout_editor_absoluteY="718dp" />
+
+
+        <TextView
+            android:id="@+id/AlertTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/floatingActionButton3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Êtes-vous sûr de vouloir supprimer ce contact ? "
+            android:textSize="20sp"
+            android:visibility="invisible"
+            tools:layout_editor_absoluteX="94dp"
+            tools:layout_editor_absoluteY="295dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="38dp"
+            android:layout_height="37dp"
+            android:layout_alignTop="@+id/editText6"
+            android:layout_marginLeft="@dimen/icons"
+            android:background="@android:color/white"
+            android:tint="@color/colorAccent"
+            app:srcCompat="@android:drawable/ic_dialog_map"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="496dp" />
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
