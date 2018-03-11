@@ -6,4 +6,26 @@
     android:layout_height="match_parent"
     tools:context="com.projet.iagenda.iagenda.VueConnexion">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/boutonConnexionVueConnexion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/boutonRetour"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            app:srcCompat="?android:attr/homeAsUpIndicator" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/boutonRetour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            app:srcCompat="@android:drawable/checkbox_on_background" />
+    </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
