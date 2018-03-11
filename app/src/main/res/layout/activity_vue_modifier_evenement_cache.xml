@@ -4,29 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.projet.iagenda.iagenda.VueConnexion">
+    tools:context="com.projet.iagenda.iagenda.VueModifierEvenementCache">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/boutonRetourVueConnexion"
+            android:id="@+id/boutonRetourVueModificationEvenementPrive"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@+id/boutonConnexionVueConnexion"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            app:srcCompat="@android:drawable/checkbox_on_background" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/boutonRetourVueModificationEvenementPrive"
             android:layout_alignParentBottom="true"
             android:clickable="true"
             app:srcCompat="?android:attr/homeAsUpIndicator" />
-
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/boutonConnexionVueConnexion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:clickable="true"
-            app:srcCompat="@android:drawable/checkbox_on_background" />
     </RelativeLayout>
-
 </android.support.constraint.ConstraintLayout>

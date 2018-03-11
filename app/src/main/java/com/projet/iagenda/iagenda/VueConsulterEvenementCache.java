@@ -17,7 +17,7 @@ public class VueConsulterEvenementCache extends AppCompatActivity {
         boutonSupprimerEvenementCache.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(VueConsulterEvenementCache.this, VueCalendrierCache.class);
+                Intent intent = new Intent(VueConsulterEvenementCache.this, VueSuppressionEvenement.class);
                 startActivity(intent);
             }
         });
@@ -26,7 +26,7 @@ public class VueConsulterEvenementCache extends AppCompatActivity {
         boutonModifierEvenementCache.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(VueConsulterEvenementCache.this, VueListeCachee.class);
+                Intent intent = new Intent(VueConsulterEvenementCache.this, VueModifierEvenementCache.class);
                 startActivity(intent);
             }
         });

@@ -17,12 +17,11 @@ public class VueModificationSuppressionContact extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vue_modification_suppression_contact);
-        // alertButton = (Button) findViewById(R.id.floatingActionButton3);
         alertTextView = (TextView) findViewById(R.id.AlertTextView);
 
 
 
-        findViewById(R.id.floatingActionButton3).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.boutonSupprimerContactCache).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(VueModificationSuppressionContact.this);
