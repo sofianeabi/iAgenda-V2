@@ -189,7 +189,7 @@
             tools:layout_editor_absoluteY="555dp" />
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/floatingActionButton2"
+            android:id="@+id/boutonAjouterContactPrive"
             android:layout_width="150dp"
             android:layout_height="68dp"
             android:layout_alignEnd="@+id/numberPicker"

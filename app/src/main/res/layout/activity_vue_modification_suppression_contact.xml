@@ -208,7 +208,7 @@
             android:layout_width="72dp"
             android:layout_height="68dp"
             android:layout_alignEnd="@+id/editText9"
-            android:layout_alignTop="@+id/floatingActionButton2"
+            android:layout_alignTop="@+id/boutonAjouterContactPrive"
             android:clickable="true"
             app:fabSize="normal"
             app:srcCompat="@android:drawable/ic_menu_delete"
