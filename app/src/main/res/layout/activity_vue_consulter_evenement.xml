@@ -1,128 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.projet.iagenda.iagenda.VueConsulterEvenement">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="506dp"
-        android:layout_height="44dp"
-        android:text="Titre"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="106dp"
-        tools:text="Couscous royal" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="534dp">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="400dp"
-        android:layout_height="44dp"
-        android:text="Contact"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="183dp"
-        tools:text="Martin" />
 
-    <EditText
-        android:id="@+id/editText8"
-        android:layout_width="166dp"
-        android:layout_height="77dp"
-        android:background="@color/colorPrimary"
-        android:ems="10"
-        android:inputType="time"
-        android:text="15:30"
-        android:textColor="@android:color/white"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="270dp" />
+        <TextView
+            android:id="@+id/textViewTitre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Consulter évenement"
+             />
 
-    <EditText
-        android:id="@+id/editText10"
-        android:layout_width="167dp"
-        android:layout_height="80dp"
-        android:background="@color/colorPrimary"
-        android:ems="10"
-        android:inputType="time"
-        android:text="16:30"
-        android:textColor="@android:color/white"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="211dp"
-        tools:layout_editor_absoluteY="270dp" />
+        <TextView
+            android:id="@+id/textViewTitreEvenement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewTitre"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="33dp"
+            android:background="@drawable/linearborder2"
+            android:text="Couscous royal"
+            android:textSize="24sp" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="400dp"
-        android:layout_height="45dp"
-        android:text="Lieu"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="410dp"
-        tools:text="15 rue de la République" />
+        <TextView
+            android:id="@+id/textViewNom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewTitreEvenement"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="61dp"
+            android:background="@drawable/linearborder2"
+            android:text="Martin Bielso"
+            android:textSize="24sp" />
 
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="139dp"
-        android:layout_height="42dp"
-        android:text="Courses"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="117dp"
-        tools:layout_editor_absoluteY="498dp" />
+        <EditText
+            android:id="@+id/editTextHeureDebut"
+            android:layout_width="166dp"
+            android:layout_height="77dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textViewNom"
+            android:layout_marginStart="101dp"
+            android:layout_marginTop="78dp"
+            android:background="@color/colorPrimary"
+            android:ems="10"
+            android:inputType="time"
+            android:text="15:30"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
 
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="113dp"
-        android:layout_height="42dp"
-        android:checked="true"
-        android:text="Repas"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="568dp" />
 
-    <RadioButton
-        android:id="@+id/radioButton3"
-        android:layout_width="116dp"
-        android:layout_height="42dp"
-        android:text="Aucun"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="204dp"
-        tools:layout_editor_absoluteY="568dp" />
+        <EditText
+            android:id="@+id/editTextHeureFin"
+            android:layout_width="166dp"
+            android:layout_height="77dp"
+            android:layout_alignBottom="@+id/editTextHeureDebut"
+            android:layout_marginStart="66dp"
+            android:layout_toEndOf="@+id/editTextHeureDebut"
+            android:background="@color/colorPrimary"
+            android:ems="10"
+            android:inputType="time"
+            android:text="15:30"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textMultiLine"
-        android:text="Notes"
-        android:textAlignment="center"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="641dp" />
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Vue consulter évenement"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="69dp"
-        tools:layout_editor_absoluteY="16dp" />
+        <TextView
+            android:id="@+id/textViewAdresse"
+            android:layout_width="400dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/editTextHeureDebut"
+            android:layout_below="@+id/editTextHeureDebut"
+            android:layout_marginTop="76dp"
+            android:background="@drawable/linearborder2"
+            android:text="15 Rue de la république"
+            android:textAlignment="center"
+            android:textSize="24sp" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/boutonModifierEvenement"
-        android:layout_width="54dp"
-        android:layout_height="51dp"
-        android:clickable="true"
-        app:backgroundTint="@color/colorPrimary"
-        app:srcCompat="@android:drawable/ic_menu_edit"
-        tools:layout_editor_absoluteX="425dp"
-        tools:layout_editor_absoluteY="771dp" />
+        <RadioButton
+            android:id="@+id/radioButtonRepas"
+            android:layout_width="113dp"
+            android:layout_height="42dp"
 
+            android:layout_alignStart="@+id/textViewAdresse"
+            android:layout_below="@+id/textViewAdresse"
+            android:layout_marginTop="58dp"
+            android:checked="true"
+            android:text="Repas"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="545dp" />
+
+
+        <RadioButton
+            android:id="@+id/radioButtonCourses"
+            android:layout_width="139dp"
+            android:layout_height="42dp"
+            android:layout_alignBottom="@+id/radioButtonRepas"
+            android:layout_centerHorizontal="true"
+            android:text="Courses"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAucun"
+            android:layout_width="116dp"
+            android:layout_height="42dp"
+            android:layout_alignBottom="@+id/radioButtonCourses"
+            android:layout_alignEnd="@+id/editTextHeureFin"
+            android:text="Aucun"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="384dp"
+            tools:layout_editor_absoluteY="543dp" />
+
+
+        <EditText
+            android:id="@+id/editTextNotes"
+            android:layout_width="480dp"
+            android:layout_height="82dp"
+            android:layout_below="@+id/radioButtonRepas"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:text="Notes"
+            android:textAlignment="center"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="630dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/boutonModifierVueConsulterEvenement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@+id/textViewAdresse"
+            android:clickable="true"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabSize="normal"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+
+
+    </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

@@ -115,7 +115,7 @@
 
 
         <EditText
-            android:id="@+id/editTextNomFemmeUn"
+            android:id="@+id/editTextNom"
             android:layout_width="85dp"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/imageButtonFemmeUne"
@@ -134,7 +134,7 @@
             android:layout_width="85dp"
             android:layout_height="wrap_content"
             android:layout_above="@+id/imageButtonFemmeDeux"
-            android:layout_toEndOf="@+id/editTextNomFemmeUn"
+            android:layout_toEndOf="@+id/editTextNom"
             android:background="@drawable/linearborder"
             android:ems="10"
             android:gravity="center"
@@ -178,7 +178,7 @@
             android:layout_width="85dp"
             android:layout_height="wrap_content"
             android:layout_above="@+id/imageButtonFemmeTrois"
-            android:layout_alignStart="@+id/editTextNomFemmeUn"
+            android:layout_alignStart="@+id/editTextNom"
             android:background="@drawable/linearborder"
             android:ems="10"
             android:gravity="center"

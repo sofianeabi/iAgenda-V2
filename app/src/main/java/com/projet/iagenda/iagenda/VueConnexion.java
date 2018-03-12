@@ -23,8 +23,8 @@ public class VueConnexion extends AppCompatActivity {
             }
         });
 
-        FloatingActionButton boutonRetour = (FloatingActionButton) findViewById(R.id.boutonRetour);
-        boutonRetour.setOnClickListener(new View.OnClickListener() {
+        FloatingActionButton boutonRetourVueConnexion = (FloatingActionButton) findViewById(R.id.boutonRetourVueConnexion);
+        boutonRetourVueConnexion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(VueConnexion.this, MainActivity.class);

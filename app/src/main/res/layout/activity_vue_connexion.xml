@@ -11,16 +11,16 @@
         android:layout_height="match_parent">
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/boutonConnexionVueConnexion"
+            android:id="@+id/boutonRetourVueConnexion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@+id/boutonRetour"
+            android:layout_toLeftOf="@+id/boutonConnexionVueConnexion"
             android:layout_alignParentBottom="true"
             android:clickable="true"
             app:srcCompat="?android:attr/homeAsUpIndicator" />
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/boutonRetour"
+            android:id="@+id/boutonConnexionVueConnexion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
