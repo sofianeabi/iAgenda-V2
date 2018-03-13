@@ -8,9 +8,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="534dp">
+        android:layout_height="match_parent">
 
 
         <TextView
@@ -20,7 +18,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:text="Consulter évenement"
-             />
+            />
 
         <TextView
             android:id="@+id/textViewTitreEvenement"
@@ -138,17 +136,24 @@
             tools:layout_editor_absoluteY="630dp" />
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/boutonModifierVueConsulterEvenement"
+            android:id="@+id/boutonModifierEvenementVueConsulterEvenement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            app:backgroundTint="@color/colorPrimary"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/boutonSupprimerEvenementVueConsulterEvenement"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="20dp"
-            android:layout_toEndOf="@+id/textViewAdresse"
+            android:layout_toLeftOf="@id/boutonModifierEvenementVueConsulterEvenement"
             android:clickable="true"
             app:backgroundTint="@color/colorPrimary"
-            app:fabSize="normal"
-            app:srcCompat="@android:drawable/ic_menu_edit" />
-
+            app:srcCompat="@android:drawable/ic_menu_delete" />
 
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

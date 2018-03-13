@@ -14,13 +14,23 @@ public class VueConsulterEvenement extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vue_consulter_evenement);
-        FloatingActionButton boutonModifierEvenement = (FloatingActionButton) findViewById(R.id.boutonModifierEvenement);
-        boutonModifierEvenement.setOnClickListener(new View.OnClickListener() {
+        FloatingActionButton boutonModifierEvenementVueConsulterEvenement = (FloatingActionButton) findViewById(R.id.boutonModifierEvenementVueConsulterEvenement);
+        boutonModifierEvenementVueConsulterEvenement.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(VueConsulterEvenement.this, VueModifierEvenement.class);
                 startActivity(intent);
             }
         });
+
+        FloatingActionButton boutonSupprimerEvenementVueConsulterEvenement = (FloatingActionButton) findViewById(R.id.boutonSupprimerEvenementVueConsulterEvenement);
+        boutonSupprimerEvenementVueConsulterEvenement.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(VueConsulterEvenement.this, VueSuppressionEvenement.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

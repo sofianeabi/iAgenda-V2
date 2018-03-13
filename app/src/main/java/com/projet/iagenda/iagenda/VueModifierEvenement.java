@@ -13,8 +13,8 @@ public class VueModifierEvenement extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vue_modifier_evenement);
 
-        FloatingActionButton boutonModifierEvenement = (FloatingActionButton) findViewById(R.id.boutonModifierEvenement);
-        boutonModifierEvenement.setOnClickListener(new View.OnClickListener() {
+        FloatingActionButton boutonRetourVueModifierEvenementCache = (FloatingActionButton) findViewById(R.id.boutonRetourVueModifierEvenementCache);
+        boutonRetourVueModifierEvenementCache.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(VueModifierEvenement.this, VueConsulterEvenement.class);
@@ -22,8 +22,8 @@ public class VueModifierEvenement extends AppCompatActivity {
             }
         });
 
-        FloatingActionButton boutonRetour = (FloatingActionButton) findViewById(R.id.boutonRetour);
-        boutonModifierEvenement.setOnClickListener(new View.OnClickListener() {
+        FloatingActionButton boutonValiderVueModifierEvenementCache = (FloatingActionButton) findViewById(R.id.boutonValiderVueModifierEvenementCache);
+        boutonValiderVueModifierEvenementCache.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(VueModifierEvenement.this, VueConsulterEvenement.class);

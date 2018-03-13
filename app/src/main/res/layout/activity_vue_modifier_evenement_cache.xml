@@ -10,8 +10,102 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <EditText
+            android:id="@+id/texteNotesVueModifierEvenement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:layout_below="@id/radioButtonRepasVueModifierEvenement"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Notes" />
+
+        <EditText
+            android:id="@+id/champTitreVueModifierEvenement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Couscous Royal"
+            tools:layout_editor_absoluteX="83dp"
+            tools:layout_editor_absoluteY="61dp" />
+
+        <TimePicker
+            android:id="@+id/dateDebutVueModifierEvenement"
+            android:layout_width="190dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/boutonSelectionContactVueModifierEvenement"
+            android:layout_marginTop="30dp"
+            android:headerBackground="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/champLieuVueModifierEvenement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateFinVueModifierEvenement"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Lieu" />
+
+        <QuickContactBadge
+            android:id="@+id/boutonSelectionContactVueModifierEvenement"
+            android:layout_width="204dp"
+            android:layout_height="46dp"
+            android:layout_below="@+id/champTitreVueModifierEvenement"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@android:drawable/stat_sys_phone_call"
+            tools:layout_editor_absoluteX="103dp"
+            tools:layout_editor_absoluteY="119dp" />
+
+        <TimePicker
+            android:id="@+id/dateFinVueModifierEvenement"
+            android:layout_width="190dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/boutonSelectionContactVueModifierEvenement"
+            android:layout_marginTop="30dp"
+            android:headerBackground="@color/colorAccent" />
+
+        <RadioButton
+            android:id="@+id/radioButtonRepasVueModifierEvenement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/champLieuVueModifierEvenement"
+            android:layout_centerHorizontal="true"
+            android:text="Repas" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCoursesVueModifierEvenement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/champLieuVueModifierEvenement"
+            android:layout_marginTop="10dp"
+            android:text="Courses"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonClassiqueVueModifierEvenement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/champLieuVueModifierEvenement"
+            android:layout_alignParentRight="true"
+            android:text="Classique" />
+
+        <TextView
+            android:id="@+id/textViewVueModifierEvenement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vue Modifier Evenement Caché"
+            android:layout_centerHorizontal="true"
+            tools:layout_editor_absoluteX="139dp"
+            tools:layout_editor_absoluteY="16dp" />
+
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/boutonRetourVueModificationEvenementPrive"
+            android:id="@+id/boutonValiderVueModifierEvenementCache"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -20,10 +114,10 @@
             app:srcCompat="@android:drawable/checkbox_on_background" />
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/floatingActionButton2"
+            android:id="@+id/boutonRetourVueModifierEvenementCache"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@+id/boutonRetourVueModificationEvenementPrive"
+            android:layout_toLeftOf="@+id/boutonValiderVueModifierEvenementCache"
             android:layout_alignParentBottom="true"
             android:clickable="true"
             app:srcCompat="?android:attr/homeAsUpIndicator" />
