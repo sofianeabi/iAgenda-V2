@@ -27,15 +27,13 @@
 
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/bouttonAjoutContactPrive"
+            android:id="@+id/bouttonAjoutContactPriveVueListeContactsPrive"
             android:layout_width="150dp"
             android:layout_height="68dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="81dp"
-            android:layout_toEndOf="@+id/TextViewTitre"
+            android:layout_alignParentRight="true"
             android:clickable="true"
             android:scaleType="center"
-            app:fabSize="normal"
             app:srcCompat="@android:drawable/checkbox_on_background" />
 
         <TextView

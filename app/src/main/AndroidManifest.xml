@@ -47,6 +47,7 @@
         <activity android:name=".VueConsulterEvenement"></activity>
         <activity android:name=".VueConsulterEvenementCache"></activity>
         <activity android:name=".VueSuppressionEvenement"></activity>
+        <activity android:name=".VueAjoutEvenementCache"></activity>
     </application>
 
 </manifest>
