@@ -34,7 +34,8 @@
             android:layout_alignParentRight="true"
             android:clickable="true"
             android:scaleType="center"
-            app:srcCompat="@android:drawable/checkbox_on_background" />
+            app:fabSize="normal"
+            app:srcCompat="@android:drawable/ic_menu_add" />
 
         <TextView
             android:id="@+id/textViewListeContact"
