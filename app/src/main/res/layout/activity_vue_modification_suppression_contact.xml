@@ -44,13 +44,15 @@
             tools:layout_editor_absoluteX="94dp"
             tools:layout_editor_absoluteY="622dp" />
 
-        <NumberPicker
-            android:id="@+id/numberPicker"
+        <EditText
+            android:id="@+id/editTextNumber"
             android:layout_width="41dp"
             android:layout_height="47dp"
             android:layout_alignBottom="@+id/editTextNote"
             android:layout_alignEnd="@+id/editTextMail"
             android:background="@drawable/linearborder"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"
             tools:layout_editor_absoluteX="466dp"
             tools:layout_editor_absoluteY="614dp" />
 
