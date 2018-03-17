@@ -4,27 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.projet.iagenda.iagenda.VueSuppressionEvenement">
-
+    tools:context="com.projet.iagenda.iagenda.VueSuppressionEvenementCache">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
         <EditText
-            android:id="@+id/texteNotesVueSupprimerEvenement"
+            android:id="@+id/texteNotesVueSupprimerEvenementCache"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textMultiLine"
-            android:layout_below="@id/radioButtonRepasVueSupprimerEvenement"
+            android:layout_below="@id/radioButtonRepasVueSupprimerEvenementCache"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp"
             android:text="Notes" />
 
         <EditText
-            android:id="@+id/champTitreVueSupprimerEvenement"
+            android:id="@+id/champTitreVueSupprimerEvenementCache"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -35,70 +33,82 @@
             tools:layout_editor_absoluteX="83dp"
             tools:layout_editor_absoluteY="61dp" />
 
-        <TimePicker
-            android:id="@+id/dateDebutVueSupprimerEvenement"
-            android:layout_width="190dp"
-            android:layout_height="100dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginTop="30dp"
-            android:layout_below="@+id/boutonSelectionContactVueSupprimerEvenement"
-            android:headerBackground="@color/colorAccent" />
 
         <EditText
-            android:id="@+id/champLieuVueSupprimerEvenement"
+            android:id="@+id/dateDebutVueSupprimerEvenementCache"
+            android:layout_width="166dp"
+            android:layout_height="77dp"
+            android:layout_below="@+id/champSelectionContactVueSupprimerEvenementCache"
+            android:background="@color/colorAccent"
+            android:ems="10"
+            android:layout_marginTop="40dp"
+            android:inputType="time"
+            android:text="15:30"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/champLieuVueSupprimerEvenementCache"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/dateFinVueSupprimerEvenement"
+            android:layout_below="@+id/dateFinVueSupprimerEvenementCache"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Lieu" />
 
-        <QuickContactBadge
-            android:id="@+id/boutonSelectionContactVueSupprimerEvenement"
-            android:layout_width="204dp"
-            android:layout_height="46dp"
-            android:layout_below="@+id/champTitreVueSupprimerEvenement"
-            android:layout_centerHorizontal="true"
-            app:srcCompat="@android:drawable/stat_sys_phone_call"
-            tools:layout_editor_absoluteX="103dp"
-            tools:layout_editor_absoluteY="119dp" />
-
-        <TimePicker
-            android:id="@+id/dateFinVueSupprimerEvenement"
-            android:layout_width="190dp"
-            android:layout_height="100dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="30dp"
-            android:layout_below="@id/boutonSelectionContactVueSupprimerEvenement"
-            android:headerBackground="@color/colorAccent" />
-
-        <RadioButton
-            android:id="@+id/radioButtonRepasVueSupprimerEvenement"
+        <TextView
+            android:id="@+id/champSelectionContactVueSupprimerEvenementCache"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/champLieuVueSupprimerEvenement"
+            android:layout_below="@+id/champTitreVueSupprimerEvenementCache"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="61dp"
+            android:background="@drawable/linearborder2"
+            android:text="Eve MARTIN"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/dateFinVueSupprimerEvenementCache"
+            android:layout_width="166dp"
+            android:layout_height="77dp"
+            android:layout_below="@id/champSelectionContactVueSupprimerEvenementCache"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorAccent"
+            android:ems="10"
+            android:layout_marginTop="40dp"
+            android:inputType="time"
+            android:text="16:30"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonRepasVueSupprimerEvenementCache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/champLieuVueSupprimerEvenementCache"
             android:layout_centerHorizontal="true"
             android:text="Repas" />
 
         <RadioButton
-            android:id="@+id/radioButtonCoursesVueSupprimerEvenement"
+            android:id="@+id/radioButtonCoursesVueSupprimerEvenementCache"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/champLieuVueSupprimerEvenement"
+            android:layout_below="@id/champLieuVueSupprimerEvenementCache"
             android:layout_marginTop="10dp"
             android:text="Courses"/>
 
         <RadioButton
-            android:id="@+id/radioButtonClassiqueVueSupprimerEvenement"
+            android:id="@+id/radioButtonClassiqueVueSupprimerEvenementCache"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/champLieuVueSupprimerEvenement"
+            android:layout_below="@+id/champLieuVueSupprimerEvenementCache"
             android:layout_alignParentRight="true"
             android:text="Classique" />
 
         <TextView
-            android:id="@+id/textViewVueSupprimerEvenement"
+            android:id="@+id/textViewVueSupprimerEvenementCache"
             android:layout_centerHorizontal="true"
             android:text="Supprimer Evenement Caché"
             android:textAlignment="center"
@@ -110,25 +120,24 @@
             tools:layout_editor_absoluteY="16dp" />
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/boutonSupprimerVueSupprimerEvenement"
+            android:id="@+id/boutonSupprimerVueSupprimerEvenementCache"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:clickable="true"
-            app:backgroundTint="@color/colorPrimary"
+            app:backgroundTint="@color/colorAccent"
             app:srcCompat="@android:drawable/checkbox_on_background" />
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/boutonRetourVueSupprimerEvenement"
+            android:id="@+id/boutonRetourVueSupprimerEvenementCache"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@id/boutonSupprimerVueSupprimerEvenement"
             android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/boutonSupprimerVueSupprimerEvenementCache"
             android:clickable="true"
-            app:backgroundTint="@color/colorPrimary"
+            app:backgroundTint="@color/colorAccent"
             app:srcCompat="?attr/actionModeCloseDrawable" />
-
 
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
