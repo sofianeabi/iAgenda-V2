@@ -11,7 +11,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/textViewTitreEvenement"
+            android:id="@+id/textViewTitreEvenementCache"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -21,7 +21,7 @@
             android:id="@+id/listeEvenements"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/textViewTitreEvenement"
+            android:layout_below="@+id/textViewTitreEvenementCache"
             android:background="@android:color/darker_gray"
             tools:layout_editor_absoluteX="8dp"
             tools:layout_editor_absoluteY="35dp" />

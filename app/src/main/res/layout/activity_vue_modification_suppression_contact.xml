@@ -193,28 +193,21 @@
             android:id="@+id/boutonValiderModificationContactCache"
             android:layout_width="150dp"
             android:layout_height="68dp"
-            android:layout_alignEnd="@+id/numberPicker"
-            android:layout_below="@+id/imageButtonNote"
-            android:layout_marginTop="44dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
             android:clickable="true"
             android:scaleType="center"
-            app:fabSize="normal"
-            app:srcCompat="@android:drawable/checkbox_on_background"
-            tools:layout_editor_absoluteX="514dp"
-            tools:layout_editor_absoluteY="718dp" />
+            app:srcCompat="@android:drawable/checkbox_on_background" />
+
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/boutonSupprimerContactCache"
             android:layout_width="72dp"
             android:layout_height="68dp"
-            android:layout_alignEnd="@+id/editTextNote"
-            android:layout_alignTop="@+id/BoutonValider"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/boutonValiderModificationContactCache"
             android:clickable="true"
-            app:fabSize="normal"
-            app:srcCompat="@android:drawable/ic_menu_delete"
-            tools:layout_editor_absoluteX="430dp"
-            tools:layout_editor_absoluteY="718dp" />
-
+            app:srcCompat="@android:drawable/ic_menu_delete" />
 
         <TextView
             android:id="@+id/AlertTextView"

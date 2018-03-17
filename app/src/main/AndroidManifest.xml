@@ -15,7 +15,6 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -33,21 +32,22 @@
         <activity android:name=".VueAjoutContactPrive">
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name=".VueModificationSuppressionContact">
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-
-
         </activity>
         <activity android:name=".VueConnexion"></activity>
+        <activity android:name=".VueModifierEvenement"></activity>
         <activity android:name=".VueModifierEvenementCache"></activity>
+        <activity android:name=".VueConsulterEvenement"></activity>
+        <activity android:name=".VueConsulterEvenementCache"></activity>
+        <activity android:name=".VueSuppressionEvenement"></activity>
+        <activity android:name=".VueAjoutEvenementCache"></activity>
     </application>
 
 </manifest>

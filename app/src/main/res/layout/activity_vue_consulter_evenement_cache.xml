@@ -10,21 +10,147 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/boutonSupprimerEvenementCache"
+        <TextView
+            android:id="@+id/textViewTitre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@id/boutonModifierEvenementCache"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Consulter évenement caché"
+            />
+
+        <TextView
+            android:id="@+id/textViewTitreEvenement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewTitre"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="33dp"
+            android:background="@drawable/linearborder2"
+            android:text="Rendez-vous avec Eve"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewNom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewTitreEvenement"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="61dp"
+            android:background="@drawable/linearborder2"
+            android:text="Eve MARTIN"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editTextHeureDebut"
+            android:layout_width="166dp"
+            android:layout_height="77dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textViewNom"
+            android:layout_marginStart="101dp"
+            android:layout_marginTop="78dp"
+            android:background="@color/colorAccent"
+            android:ems="10"
+            android:inputType="time"
+            android:text="15:30"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+
+        <EditText
+            android:id="@+id/editTextHeureFin"
+            android:layout_width="166dp"
+            android:layout_height="77dp"
+            android:layout_alignBottom="@+id/editTextHeureDebut"
+            android:layout_marginStart="66dp"
+            android:layout_toEndOf="@+id/editTextHeureDebut"
+            android:background="@color/colorAccent"
+            android:ems="10"
+            android:inputType="time"
+            android:text="16:30"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:id="@+id/textViewAdresse"
+            android:layout_width="400dp"
+            android:layout_height="45dp"
+            android:layout_alignStart="@+id/editTextHeureDebut"
+            android:layout_below="@+id/editTextHeureDebut"
+            android:layout_marginTop="76dp"
+            android:background="@drawable/linearborder2"
+            android:text="15 Rue de la république"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonRepas"
+            android:layout_width="113dp"
+            android:layout_height="42dp"
+
+            android:layout_alignStart="@+id/textViewAdresse"
+            android:layout_below="@+id/textViewAdresse"
+            android:layout_marginTop="58dp"
+            android:checked="true"
+            android:text="Repas"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="545dp" />
+
+
+        <RadioButton
+            android:id="@+id/radioButtonCourses"
+            android:layout_width="139dp"
+            android:layout_height="42dp"
+            android:layout_alignBottom="@+id/radioButtonRepas"
+            android:layout_centerHorizontal="true"
+            android:text="Courses"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAucun"
+            android:layout_width="116dp"
+            android:layout_height="42dp"
+            android:layout_alignBottom="@+id/radioButtonCourses"
+            android:layout_alignEnd="@+id/editTextHeureFin"
+            android:text="Aucun"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="384dp"
+            tools:layout_editor_absoluteY="543dp" />
+
+
+        <EditText
+            android:id="@+id/editTextNotes"
+            android:layout_width="480dp"
+            android:layout_height="82dp"
+            android:layout_below="@+id/radioButtonRepas"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:text="Notes"
+            android:textAlignment="center"
+            tools:layout_editor_absoluteX="69dp"
+            tools:layout_editor_absoluteY="630dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/boutonSupprimerEvenementCacheVueConsulterEvenementCache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/boutonModifierEvenementCacheVueConsulterEvenementCache"
             android:layout_alignParentBottom="true"
             android:clickable="true"
             app:srcCompat="@android:drawable/ic_menu_delete" />
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/boutonModifierEvenementCache"
+            android:id="@+id/boutonModifierEvenementCacheVueConsulterEvenementCache"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"            android:clickable="true"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
             app:srcCompat="@android:drawable/ic_menu_edit" />
+
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
