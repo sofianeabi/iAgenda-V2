@@ -164,14 +164,13 @@
 
         <TextView
             android:id="@+id/textViewTitre"
-            android:layout_width="413dp"
-            android:layout_height="32dp"
-
             android:layout_alignParentTop="true"
             android:layout_alignStart="@+id/editTextNom"
-            android:background="@color/colorAccent"
             android:text="Ajout de contact"
             android:textAlignment="center"
+            android:layout_width="413dp"
+            android:layout_height="32dp"
+            android:background="@color/colorAccent"
             android:textColor="@color/colorText"
             tools:layout_editor_absoluteX="94dp"
             tools:layout_editor_absoluteY="5dp" />
