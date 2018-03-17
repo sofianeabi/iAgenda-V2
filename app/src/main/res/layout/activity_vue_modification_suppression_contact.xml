@@ -168,7 +168,7 @@
             android:layout_alignParentTop="true"
             android:layout_alignStart="@+id/editTextNom"
             android:background="@color/colorAccent"
-            android:text="modification de contact"
+            android:text="Modification de contact"
             android:textAlignment="center"
             android:textColor="@color/colorText"
             tools:layout_editor_absoluteX="94dp"

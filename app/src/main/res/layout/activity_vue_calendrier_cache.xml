@@ -8,14 +8,16 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/boutonAfficherTableauDeChasse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@id/bouttonAfficherVueListeCachee"
             android:layout_above="@+id/boutonSortirModeCache"
+            android:layout_toLeftOf="@id/bouttonAfficherVueListeCachee"
             android:clickable="true"
             app:srcCompat="?attr/actionModePasteDrawable" />
 
@@ -23,8 +25,8 @@
             android:id="@+id/bouttonAjouterEvenementCache"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
             android:clickable="true"
             app:srcCompat="@android:drawable/ic_input_add"
             tools:layout_editor_absoluteX="339dp"
@@ -41,12 +43,14 @@
 
         <TextView
             android:id="@+id/textVueListeCachee"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:text="Vue Liste Cachee"
-            android:textColor="@color/colorAccent"
+            android:text="Liste Cachee"
+            android:textAlignment="center"
+            android:layout_width="413dp"
+            android:layout_height="32dp"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorText"
             tools:layout_editor_absoluteX="177dp"
             tools:layout_editor_absoluteY="16dp" />
 
@@ -65,8 +69,8 @@
             android:id="@+id/boutonSortirModeCache"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@+id/bouttonAjouterEvenementCache"
             android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/bouttonAjouterEvenementCache"
             android:clickable="true"
             app:srcCompat="?android:attr/actionModeCloseDrawable"
             tools:layout_editor_absoluteX="283dp"
