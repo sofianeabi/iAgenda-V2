@@ -9,10 +9,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
 import android.widget.CalendarView;
+import android.widget.ListView;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
@@ -58,6 +61,24 @@ public class MainActivity extends AppCompatActivity {
         } catch (ParseException e) {
             e.printStackTrace();
         }
+
+        ArrayList<String> listEvent = new ArrayList<String>();
+        listEvent.add("Lundi 01 Janvier");
+        listEvent.add("Rendez-vous président : 12h00");
+        listEvent.add("Rendez-vous dentiste : 20h30");
+        listEvent.add("Mardi 02 Janvier");
+        listEvent.add("Rendez-vous garagiste : 08h30");
+        listEvent.add("Déjeuné avec Christine : 12h15");
+        listEvent.add("Mercredi 03 Janvier");
+
+        ListView listView =  (ListView) findViewById(R.id.listeEvenement);
+
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(
+                this,
+                android.R.layout.simple_list_item_1,
+                listEvent);
+
+        listView.setAdapter(arrayAdapter);
     }
 
     @Override
