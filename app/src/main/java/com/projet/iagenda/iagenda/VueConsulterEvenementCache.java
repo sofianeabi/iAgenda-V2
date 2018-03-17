@@ -5,6 +5,8 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class VueConsulterEvenementCache extends AppCompatActivity {
 
@@ -30,5 +32,12 @@ public class VueConsulterEvenementCache extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        EditText texteHeureDebutCache = (EditText) findViewById(R.id.editTextHeureDebutCache);
+        texteHeureDebutCache.setText(VueCalendrierCache.heureRendezVousCache);
+        TextView textViewNomCache = (TextView) findViewById(R.id.textViewNomCache);
+        textViewNomCache.setText(VueCalendrierCache.personneRendezVousCache);
+        TextView textViewTitreEvenementCache = (TextView) findViewById(R.id.textViewTitreEvenementCache);
+        textViewTitreEvenementCache.setText(VueCalendrierCache.rendezVousCache);
     }
 }

@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<String> listEvent = new ArrayList<String>();
         listEvent.add("Lundi 01 Janvier");
         listEvent.add("Rendez-vous président : 12h00");
-        listEvent.add("Rendez-vous dentiste : 20h30");
+        listEvent.add("Rendez-vous dentiste : 12h30");
         listEvent.add("Mardi 02 Janvier");
         listEvent.add("Rendez-vous garagiste : 08h30");
         listEvent.add("Déjeuné avec Christine : 12h15");
@@ -116,8 +116,12 @@ public class MainActivity extends AppCompatActivity {
                         personneRendezVous="Inconnu";
                         rendezVous="rendezVous";
                 }
-                Intent intent = new Intent(MainActivity.this, VueConsulterEvenement.class);
-                startActivity(intent);
+
+                if (position == 1 || position == 2 || position == 4 || position == 5){
+                    Intent intent = new Intent(MainActivity.this, VueConsulterEvenement.class);
+                    startActivity(intent);
+                }
+
             }
         });
     }
