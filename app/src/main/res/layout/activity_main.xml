@@ -21,13 +21,12 @@
             android:id="@+id/boutonConnexion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@id/bouttonAjouterEvenement"
             android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/bouttonAjouterEvenement"
             android:clickable="true"
             android:visibility="visible"
-            app:backgroundTint="@android:color/black"
-            app:rippleColor="@android:color/black"
-            app:srcCompat="@mipmap/ic_launcher_round"
+            app:backgroundTint="@color/colorText"
+            app:rippleColor="@android:color/background_light"
             tools:layout_editor_absoluteX="296dp"
             tools:layout_editor_absoluteY="696dp" />
 
