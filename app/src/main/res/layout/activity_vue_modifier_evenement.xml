@@ -97,10 +97,13 @@
 
         <TextView
             android:id="@+id/textViewVueModifierEvenement"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Vue Modifier Evenement"
             android:layout_centerHorizontal="true"
+            android:text="Modifier Evenement"
+            android:textAlignment="center"
+            android:layout_width="413dp"
+            android:layout_height="32dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorText"
             tools:layout_editor_absoluteX="139dp"
             tools:layout_editor_absoluteY="16dp" />
 

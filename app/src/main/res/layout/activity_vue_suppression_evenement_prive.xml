@@ -4,25 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.projet.iagenda.iagenda.VueModifierEvenementCache">
+    tools:context="com.projet.iagenda.iagenda.VueSuppressionEvenement">
+
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <EditText
-            android:id="@+id/texteNotesVueModifierEvenement"
+            android:id="@+id/texteNotesVueSupprimerEvenement"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textMultiLine"
-            android:layout_below="@id/radioButtonRepasVueModifierEvenement"
+            android:layout_below="@id/radioButtonRepasVueSupprimerEvenement"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp"
             android:text="Notes" />
 
         <EditText
-            android:id="@+id/champTitreVueModifierEvenement"
+            android:id="@+id/champTitreVueSupprimerEvenement"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -34,71 +36,71 @@
             tools:layout_editor_absoluteY="61dp" />
 
         <TimePicker
-            android:id="@+id/dateDebutVueModifierEvenement"
+            android:id="@+id/dateDebutVueSupprimerEvenement"
             android:layout_width="190dp"
             android:layout_height="100dp"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/boutonSelectionContactVueModifierEvenement"
             android:layout_marginTop="30dp"
+            android:layout_below="@+id/boutonSelectionContactVueSupprimerEvenement"
             android:headerBackground="@color/colorAccent" />
 
         <EditText
-            android:id="@+id/champLieuVueModifierEvenement"
+            android:id="@+id/champLieuVueSupprimerEvenement"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/dateFinVueModifierEvenement"
+            android:layout_below="@+id/dateFinVueSupprimerEvenement"
             android:layout_centerHorizontal="true"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Lieu" />
 
         <QuickContactBadge
-            android:id="@+id/boutonSelectionContactVueModifierEvenement"
+            android:id="@+id/boutonSelectionContactVueSupprimerEvenement"
             android:layout_width="204dp"
             android:layout_height="46dp"
-            android:layout_below="@+id/champTitreVueModifierEvenement"
+            android:layout_below="@+id/champTitreVueSupprimerEvenement"
             android:layout_centerHorizontal="true"
             app:srcCompat="@android:drawable/stat_sys_phone_call"
             tools:layout_editor_absoluteX="103dp"
             tools:layout_editor_absoluteY="119dp" />
 
         <TimePicker
-            android:id="@+id/dateFinVueModifierEvenement"
+            android:id="@+id/dateFinVueSupprimerEvenement"
             android:layout_width="190dp"
             android:layout_height="100dp"
             android:layout_alignParentRight="true"
-            android:layout_below="@id/boutonSelectionContactVueModifierEvenement"
             android:layout_marginTop="30dp"
+            android:layout_below="@id/boutonSelectionContactVueSupprimerEvenement"
             android:headerBackground="@color/colorAccent" />
 
         <RadioButton
-            android:id="@+id/radioButtonRepasVueModifierEvenement"
+            android:id="@+id/radioButtonRepasVueSupprimerEvenement"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/champLieuVueModifierEvenement"
+            android:layout_below="@+id/champLieuVueSupprimerEvenement"
             android:layout_centerHorizontal="true"
             android:text="Repas" />
 
         <RadioButton
-            android:id="@+id/radioButtonCoursesVueModifierEvenement"
+            android:id="@+id/radioButtonCoursesVueSupprimerEvenement"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/champLieuVueModifierEvenement"
+            android:layout_below="@id/champLieuVueSupprimerEvenement"
             android:layout_marginTop="10dp"
             android:text="Courses"/>
 
         <RadioButton
-            android:id="@+id/radioButtonClassiqueVueModifierEvenement"
+            android:id="@+id/radioButtonClassiqueVueSupprimerEvenement"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/champLieuVueModifierEvenement"
+            android:layout_below="@+id/champLieuVueSupprimerEvenement"
             android:layout_alignParentRight="true"
             android:text="Classique" />
 
         <TextView
-            android:id="@+id/textViewVueModifierEvenement"
+            android:id="@+id/textViewVueSupprimerEvenement"
             android:layout_centerHorizontal="true"
-            android:text="Modifier Evenement Caché"
+            android:text="Supprimer Evenement Caché"
             android:textAlignment="center"
             android:layout_width="413dp"
             android:layout_height="32dp"
@@ -108,21 +110,25 @@
             tools:layout_editor_absoluteY="16dp" />
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/boutonValiderVueModifierEvenementCache"
+            android:id="@+id/boutonSupprimerVueSupprimerEvenement"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:clickable="true"
+            app:backgroundTint="@color/colorPrimary"
             app:srcCompat="@android:drawable/checkbox_on_background" />
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/boutonRetourVueModifierEvenementCache"
+            android:id="@+id/boutonRetourVueSupprimerEvenement"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@+id/boutonValiderVueModifierEvenementCache"
+            android:layout_toLeftOf="@id/boutonSupprimerVueSupprimerEvenement"
             android:layout_alignParentBottom="true"
             android:clickable="true"
-            app:srcCompat="?android:attr/homeAsUpIndicator" />
+            app:backgroundTint="@color/colorPrimary"
+            app:srcCompat="?attr/actionModeCloseDrawable" />
+
+
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
