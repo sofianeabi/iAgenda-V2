@@ -5,6 +5,8 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class VueModifierEvenement extends AppCompatActivity {
 
@@ -31,5 +33,18 @@ public class VueModifierEvenement extends AppCompatActivity {
             }
         });
 
+
+
+
+        EditText texteHeureDebut = (EditText) findViewById(R.id.dateDebutVueModifierEvenement);
+        texteHeureDebut.setText(MainActivity.heureRendezVous);
+        TextView textViewNom = (TextView) findViewById(R.id.champSelectionContactVueModifierEvenement);
+        textViewNom.setText(MainActivity.personneRendezVous);
+        TextView textViewTitreEvenement = (TextView) findViewById(R.id.champTitreVueModifierEvenement);
+        textViewTitreEvenement.setText(MainActivity.rendezVous);
+
+
     }
+
+
 }

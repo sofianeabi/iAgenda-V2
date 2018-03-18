@@ -10,12 +10,16 @@ import android.widget.TextView;
 
 public class VueConsulterEvenement extends AppCompatActivity {
 
+    public static String heureDebut = "";
+    public static String nom = "";
+    public static String titreEvenement = "";
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vue_consulter_evenement);
+
         FloatingActionButton boutonModifierEvenementVueConsulterEvenement = (FloatingActionButton) findViewById(R.id.boutonModifierEvenementVueConsulterEvenement);
         boutonModifierEvenementVueConsulterEvenement.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,12 +38,17 @@ public class VueConsulterEvenement extends AppCompatActivity {
             }
         });
 
+
+
         EditText texteHeureDebut = (EditText) findViewById(R.id.editTextHeureDebut);
         texteHeureDebut.setText(MainActivity.heureRendezVous);
         TextView textViewNom = (TextView) findViewById(R.id.textViewNom);
         textViewNom.setText(MainActivity.personneRendezVous);
         TextView textViewTitreEvenement = (TextView) findViewById(R.id.textViewTitreEvenement);
         textViewTitreEvenement.setText(MainActivity.rendezVous);
+        heureDebut = MainActivity.heureRendezVous;
+        nom = MainActivity.personneRendezVous;
+        titreEvenement = MainActivity.rendezVous;
 
 
 

@@ -5,6 +5,8 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class VueModifierEvenementCache extends AppCompatActivity {
 
@@ -22,6 +24,7 @@ public class VueModifierEvenementCache extends AppCompatActivity {
             }
         });
 
+
         FloatingActionButton boutonValiderVueModifierEvenementCache = (FloatingActionButton) findViewById(R.id.boutonValiderVueModifierEvenementCache);
         boutonValiderVueModifierEvenementCache.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,5 +33,13 @@ public class VueModifierEvenementCache extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        EditText texteHeureDebutCache = (EditText) findViewById(R.id.dateDebutVueModifierEvenement);
+        texteHeureDebutCache.setText(VueCalendrierCache.heureRendezVousCache);
+        TextView textViewNomCache = (TextView) findViewById(R.id.champSelectionContactVueModifierEvenementCache);
+        textViewNomCache.setText(VueCalendrierCache.personneRendezVousCache);
+        TextView textViewTitreEvenementCache = (TextView) findViewById(R.id.champTitreVueModifierEvenement);
+        textViewTitreEvenementCache.setText(VueCalendrierCache.rendezVousCache);
     }
 }
