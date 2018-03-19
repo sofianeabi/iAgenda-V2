@@ -45,7 +45,8 @@
             android:inputType="time"
             android:text="15:30"
             android:textColor="@android:color/white"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            />
 
         <EditText
             android:id="@+id/champLieuVueSupprimerEvenementCache"

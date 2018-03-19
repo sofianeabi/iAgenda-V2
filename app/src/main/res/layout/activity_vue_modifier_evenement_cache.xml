@@ -33,14 +33,20 @@
             tools:layout_editor_absoluteX="83dp"
             tools:layout_editor_absoluteY="61dp" />
 
-        <TimePicker
+        <EditText
             android:id="@+id/dateDebutVueModifierEvenement"
             android:layout_width="190dp"
             android:layout_height="100dp"
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/boutonSelectionContactVueModifierEvenement"
-            android:layout_marginTop="30dp"
-            android:headerBackground="@color/colorAccent" />
+            android:background="@color/colorAccent"
+            android:ems="10"
+            android:layout_marginTop="40dp"
+            android:inputType="time"
+            android:text="15:30"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
 
         <EditText
             android:id="@+id/champLieuVueModifierEvenement"
@@ -50,7 +56,8 @@
             android:layout_centerHorizontal="true"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Lieu" />
+            android:text="Lieu"
+            />
 
         <QuickContactBadge
             android:id="@+id/boutonSelectionContactVueModifierEvenement"
@@ -62,14 +69,34 @@
             tools:layout_editor_absoluteX="103dp"
             tools:layout_editor_absoluteY="119dp" />
 
-        <TimePicker
+
+        <TextView
+            android:id="@+id/champSelectionContactVueModifierEvenementCache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/boutonSelectionContactVueModifierEvenement"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="61dp"
+            android:background="@drawable/linearborder2"
+            android:text="Eve MARTIN"
+            android:textSize="24sp" />
+
+
+        <EditText
             android:id="@+id/dateFinVueModifierEvenement"
             android:layout_width="190dp"
             android:layout_height="100dp"
             android:layout_alignParentRight="true"
             android:layout_below="@id/boutonSelectionContactVueModifierEvenement"
-            android:layout_marginTop="30dp"
-            android:headerBackground="@color/colorAccent" />
+            android:background="@color/colorAccent"
+            android:ems="10"
+            android:layout_marginTop="40dp"
+            android:inputType="time"
+            android:text="15:30"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+
 
         <RadioButton
             android:id="@+id/radioButtonRepasVueModifierEvenement"

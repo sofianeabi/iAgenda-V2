@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
                     case 5:
                         heureRendezVous="12H15";
                         personneRendezVous="Christine";
-                        rendezVous="rendezVous";
+                        rendezVous="Dejeuné";
                         break;
                     default:
                         heureRendezVous="08H00";
