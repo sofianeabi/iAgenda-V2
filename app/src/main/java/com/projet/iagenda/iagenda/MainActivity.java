@@ -9,14 +9,22 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.CalendarView;
+import android.widget.ListView;
+import android.widget.Toast;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static String heureRendezVous = "";
+    public static String personneRendezVous = "";
+    public static String rendezVous = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +66,64 @@ public class MainActivity extends AppCompatActivity {
         } catch (ParseException e) {
             e.printStackTrace();
         }
+
+        ArrayList<String> listEvent = new ArrayList<String>();
+        listEvent.add("Lundi 01 Janvier");
+        listEvent.add("Rendez-vous président : 12h00");
+        listEvent.add("Rendez-vous dentiste : 12h30");
+        listEvent.add("Mardi 02 Janvier");
+        listEvent.add("Rendez-vous garagiste : 08h30");
+        listEvent.add("Déjeuné avec Christine : 12h15");
+        listEvent.add("Mercredi 03 Janvier");
+
+        ListView listView =  (ListView) findViewById(R.id.listeEvenement);
+
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(
+                this,
+                android.R.layout.simple_list_item_1,
+                listEvent);
+
+        listView.setAdapter(arrayAdapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+        {
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1,int position, long arg3)
+            {
+                switch (position){
+                    case 1:
+                        heureRendezVous="12H00";
+                        personneRendezVous="Président";
+                        rendezVous="rendezVous";
+                        break;
+                    case 2:
+                        heureRendezVous="13H00";
+                        personneRendezVous="Dentiste";
+                        rendezVous="rendezVous";
+                        break;
+                    case 4:
+                        heureRendezVous="08H30";
+                        personneRendezVous="Garagiste";
+                        rendezVous="rendezVous";
+                        break;
+                    case 5:
+                        heureRendezVous="12H15";
+                        personneRendezVous="Christine";
+                        rendezVous="Dejeuné";
+                        break;
+                    default:
+                        heureRendezVous="08H00";
+                        personneRendezVous="Inconnu";
+                        rendezVous="rendezVous";
+                }
+
+                if (position == 1 || position == 2 || position == 4 || position == 5){
+                    Intent intent = new Intent(MainActivity.this, VueConsulterEvenement.class);
+                    startActivity(intent);
+                }
+
+            }
+        });
     }
 
     @Override
@@ -66,6 +132,7 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

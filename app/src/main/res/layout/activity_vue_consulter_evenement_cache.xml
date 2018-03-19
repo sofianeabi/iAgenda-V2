@@ -11,19 +11,22 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textViewTitre"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/textViewTitreCache"
+            android:layout_width="413dp"
+            android:layout_height="32dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:background="@color/colorAccent"
             android:text="Consulter évenement caché"
             />
 
         <TextView
-            android:id="@+id/textViewTitreEvenement"
+            android:id="@+id/textViewTitreEvenementCache"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textViewTitre"
+            android:layout_below="@+id/textViewTitreCache"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="33dp"
             android:background="@drawable/linearborder2"
@@ -31,10 +34,10 @@
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/textViewNom"
+            android:id="@+id/textViewNomCache"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textViewTitreEvenement"
+            android:layout_below="@+id/textViewTitreEvenementCache"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="61dp"
             android:background="@drawable/linearborder2"
@@ -42,11 +45,11 @@
             android:textSize="24sp" />
 
         <EditText
-            android:id="@+id/editTextHeureDebut"
+            android:id="@+id/editTextHeureDebutCache"
             android:layout_width="166dp"
             android:layout_height="77dp"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/textViewNom"
+            android:layout_below="@+id/textViewNomCache"
             android:layout_marginStart="101dp"
             android:layout_marginTop="78dp"
             android:background="@color/colorAccent"
@@ -58,12 +61,12 @@
 
 
         <EditText
-            android:id="@+id/editTextHeureFin"
+            android:id="@+id/editTextHeureFinCache"
             android:layout_width="166dp"
             android:layout_height="77dp"
-            android:layout_alignBottom="@+id/editTextHeureDebut"
+            android:layout_alignBottom="@+id/editTextHeureDebutCache"
             android:layout_marginStart="66dp"
-            android:layout_toEndOf="@+id/editTextHeureDebut"
+            android:layout_toEndOf="@+id/editTextHeureDebutCache"
             android:background="@color/colorAccent"
             android:ems="10"
             android:inputType="time"
@@ -73,11 +76,11 @@
 
 
         <TextView
-            android:id="@+id/textViewAdresse"
+            android:id="@+id/textViewAdresseCache"
             android:layout_width="400dp"
             android:layout_height="45dp"
-            android:layout_alignStart="@+id/editTextHeureDebut"
-            android:layout_below="@+id/editTextHeureDebut"
+            android:layout_alignStart="@+id/editTextHeureDebutCache"
+            android:layout_below="@+id/editTextHeureDebutCache"
             android:layout_marginTop="76dp"
             android:background="@drawable/linearborder2"
             android:text="15 Rue de la république"
@@ -85,12 +88,11 @@
             android:textSize="24sp" />
 
         <RadioButton
-            android:id="@+id/radioButtonRepas"
+            android:id="@+id/radioButtonRepasCache"
             android:layout_width="113dp"
             android:layout_height="42dp"
-
-            android:layout_alignStart="@+id/textViewAdresse"
-            android:layout_below="@+id/textViewAdresse"
+            android:layout_alignStart="@+id/textViewAdresseCache"
+            android:layout_below="@+id/textViewAdresseCache"
             android:layout_marginTop="58dp"
             android:checked="true"
             android:text="Repas"
@@ -100,20 +102,20 @@
 
 
         <RadioButton
-            android:id="@+id/radioButtonCourses"
+            android:id="@+id/radioButtonCoursesCache"
             android:layout_width="139dp"
             android:layout_height="42dp"
-            android:layout_alignBottom="@+id/radioButtonRepas"
+            android:layout_alignBottom="@+id/radioButtonRepasCache"
             android:layout_centerHorizontal="true"
             android:text="Courses"
             android:textSize="24sp" />
 
         <RadioButton
-            android:id="@+id/radioButtonAucun"
+            android:id="@+id/radioButtonAucunCache"
             android:layout_width="116dp"
             android:layout_height="42dp"
-            android:layout_alignBottom="@+id/radioButtonCourses"
-            android:layout_alignEnd="@+id/editTextHeureFin"
+            android:layout_alignBottom="@+id/radioButtonCoursesCache"
+            android:layout_alignEnd="@+id/editTextHeureFinCache"
             android:text="Aucun"
             android:textSize="24sp"
             tools:layout_editor_absoluteX="384dp"
@@ -121,10 +123,10 @@
 
 
         <EditText
-            android:id="@+id/editTextNotes"
+            android:id="@+id/editTextNotesCache"
             android:layout_width="480dp"
             android:layout_height="82dp"
-            android:layout_below="@+id/radioButtonRepas"
+            android:layout_below="@+id/radioButtonRepasCache"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="34dp"
             android:ems="10"

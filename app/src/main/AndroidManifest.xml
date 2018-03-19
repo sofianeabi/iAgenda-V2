@@ -15,6 +15,7 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -28,26 +29,29 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".VueCalendrierCache" />
         <activity android:name=".VueListeCachee" />
-        <activity android:name=".VueTableauDeChasse"/>
+        <activity android:name=".VueTableauDeChasse" />
         <activity android:name=".VueAjoutContactPrive">
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity android:name=".VueModificationSuppressionContact">
             <intent-filter>
                 <action android:name="com.company.package.FOO" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".VueConnexion"></activity>
-        <activity android:name=".VueModifierEvenement"></activity>
-        <activity android:name=".VueModifierEvenementCache"></activity>
-        <activity android:name=".VueConsulterEvenement"></activity>
-        <activity android:name=".VueConsulterEvenementCache"></activity>
-        <activity android:name=".VueSuppressionEvenement"></activity>
-        <activity android:name=".VueAjoutEvenementCache"></activity>
+        <activity android:name=".VueConnexion" />
+        <activity android:name=".VueModifierEvenement" />
+        <activity android:name=".VueModifierEvenementCache" />
+        <activity android:name=".VueConsulterEvenement" />
+        <activity android:name=".VueConsulterEvenementCache" />
+        <activity android:name=".VueSuppressionEvenement" />
+        <activity android:name=".VueAjoutEvenementCache" />
+        <activity android:name=".VueSuppressionEvenementCache"></activity>
     </application>
 
 </manifest>

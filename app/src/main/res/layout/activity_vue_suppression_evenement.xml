@@ -35,14 +35,20 @@
             tools:layout_editor_absoluteX="83dp"
             tools:layout_editor_absoluteY="61dp" />
 
-        <TimePicker
+
+        <EditText
             android:id="@+id/dateDebutVueSupprimerEvenement"
             android:layout_width="190dp"
             android:layout_height="100dp"
             android:layout_alignParentLeft="true"
             android:layout_marginTop="30dp"
             android:layout_below="@+id/boutonSelectionContactVueSupprimerEvenement"
-            android:headerBackground="@color/colorPrimary" />
+            android:background="@color/colorPrimary"
+            android:ems="10"
+            android:inputType="time"
+            android:text="15:30"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/champLieuVueSupprimerEvenement"
@@ -52,7 +58,8 @@
             android:layout_centerHorizontal="true"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Lieu" />
+            android:text="Lieu"
+            />
 
         <QuickContactBadge
             android:id="@+id/boutonSelectionContactVueSupprimerEvenement"
@@ -64,14 +71,31 @@
             tools:layout_editor_absoluteX="103dp"
             tools:layout_editor_absoluteY="119dp" />
 
-        <TimePicker
+
+        <TextView
+            android:id="@+id/champSelectionContactVueSupprimerEvenement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/champTitreVueSupprimerEvenement"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="61dp"
+            android:background="@drawable/linearborder2"
+            android:text="Eve MARTIN"
+            android:textSize="24sp" />
+
+        <EditText
             android:id="@+id/dateFinVueSupprimerEvenement"
             android:layout_width="190dp"
             android:layout_height="100dp"
             android:layout_alignParentRight="true"
             android:layout_marginTop="30dp"
-            android:layout_below="@id/boutonSelectionContactVueSupprimerEvenement"
-            android:headerBackground="@color/colorPrimary" />
+            android:layout_below="@+id/boutonSelectionContactVueSupprimerEvenement"
+            android:background="@color/colorPrimary"
+            android:ems="10"
+            android:inputType="time"
+            android:text="15:30"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
 
         <RadioButton
             android:id="@+id/radioButtonRepasVueSupprimerEvenement"

@@ -5,6 +5,8 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class VueSuppressionEvenement extends AppCompatActivity {
 
@@ -32,6 +34,12 @@ public class VueSuppressionEvenement extends AppCompatActivity {
         });
 
 
+        EditText texteHeureDebut = (EditText) findViewById(R.id.dateDebutVueSupprimerEvenement);
+        texteHeureDebut.setText(MainActivity.heureRendezVous);
+        TextView textViewNom = (TextView) findViewById(R.id.champSelectionContactVueSupprimerEvenement);
+        textViewNom.setText(MainActivity.personneRendezVous);
+        TextView textViewTitreEvenement = (TextView) findViewById(R.id.champTitreVueSupprimerEvenement);
+        textViewTitreEvenement.setText(MainActivity.rendezVous);
 
     }
 

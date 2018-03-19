@@ -34,7 +34,8 @@
             android:layout_alignParentRight="true"
             android:clickable="true"
             android:scaleType="center"
-            app:srcCompat="@android:drawable/checkbox_on_background" />
+            app:fabSize="normal"
+            app:srcCompat="@android:drawable/ic_menu_add" />
 
         <TextView
             android:id="@+id/textViewListeContact"
@@ -73,7 +74,8 @@
             android:background="@color/colorText"
             android:padding="0dp"
             android:scaleType="fitEnd"
-            app:srcCompat="@drawable/woman" />
+            app:srcCompat="@drawable/woman"
+            android:onClick="modifier1"/>
 
         <ImageButton
             android:id="@+id/imageButtonFemmeDeux"
@@ -85,7 +87,8 @@
             android:background="@color/colorText"
             android:padding="0dp"
             android:scaleType="fitEnd"
-            app:srcCompat="@drawable/woman2" />
+            app:srcCompat="@drawable/woman2"
+            android:onClick="modifier2"/>
 
         <ImageButton
             android:id="@+id/imageButtonFemmeTrois"
@@ -97,7 +100,8 @@
             android:background="@color/colorText"
             android:padding="0dp"
             android:scaleType="fitEnd"
-            app:srcCompat="@drawable/woman3" />
+            app:srcCompat="@drawable/woman3"
+            android:onClick="modifier3"/>
 
         <ImageButton
             android:id="@+id/imageButtonFemmeQuatre"
@@ -109,7 +113,8 @@
             android:background="@color/colorText"
             android:padding="0dp"
             android:scaleType="fitEnd"
-            app:srcCompat="@drawable/woman4" />
+            app:srcCompat="@drawable/woman4"
+            android:onClick="modifier4"/>
 
 
         <EditText
