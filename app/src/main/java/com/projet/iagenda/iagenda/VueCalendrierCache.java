@@ -40,15 +40,6 @@ public class VueCalendrierCache extends AppCompatActivity {
             }
         });
 
-        FloatingActionButton bouttonAfficherVueListeCachee = (FloatingActionButton) findViewById(R.id.bouttonAfficherVueListeCachee);
-        bouttonAfficherVueListeCachee.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(VueCalendrierCache.this, VueListeCachee.class);
-                startActivity(intent);
-            }
-        });
-
         FloatingActionButton boutonAfficherTableauDeChasse = (FloatingActionButton) findViewById(R.id.boutonAfficherTableauDeChasse);
         boutonAfficherTableauDeChasse.setOnClickListener(new View.OnClickListener() {
             @Override

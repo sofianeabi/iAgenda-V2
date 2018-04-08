@@ -14,8 +14,8 @@
             android:id="@+id/boutonAfficherTableauDeChasse"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/boutonSortirModeCache"
-            android:layout_toLeftOf="@id/bouttonAfficherVueListeCachee"
+            android:layout_above="@+id/bouttonAjouterEvenementCache"
+            android:layout_alignParentRight="true"
             android:clickable="true"
             app:srcCompat="?attr/actionModePasteDrawable" />
 
@@ -51,17 +51,6 @@
             android:textColor="@color/colorText"
             tools:layout_editor_absoluteX="177dp"
             tools:layout_editor_absoluteY="16dp" />
-
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/bouttonAfficherVueListeCachee"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/bouttonAjouterEvenementCache"
-            android:layout_alignParentRight="true"
-            android:clickable="true"
-            app:srcCompat="@android:drawable/ic_menu_sort_by_size"
-            tools:layout_editor_absoluteX="339dp"
-            tools:layout_editor_absoluteY="586dp" />
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/boutonSortirModeCache"
