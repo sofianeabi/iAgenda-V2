@@ -27,8 +27,8 @@ public class VueModificationSuppressionContact extends AppCompatActivity {
         String code = intent.getStringExtra("code");
 
 
-        TextView textViewNom = (TextView) findViewById(R.id.editTextNom);
-        TextView textViewPrenom = (TextView) findViewById(R.id.editTextPrenom);
+        final TextView textViewNom = (TextView) findViewById(R.id.editTextNom);
+        final TextView textViewPrenom = (TextView) findViewById(R.id.editTextPrenom);
         TextView textViewPhone = (TextView) findViewById(R.id.editTextTelephone);
         TextView textViewAdresse = (TextView) findViewById(R.id.editTextAdresse);
         TextView textViewMail = (TextView) findViewById(R.id.editTextMail);
@@ -46,7 +46,7 @@ public class VueModificationSuppressionContact extends AppCompatActivity {
                 textViewAdresse.setText("02 rue du janvier");
                 textViewMail.setText("i.martini@gmail.com");
                 textViewNote.setText("Une énigme");
-                numberPicker.setText("6");
+                numberPicker.setText("2");
                 break;
             case "2":
                 textViewNom.setText("Stratow");
@@ -65,7 +65,7 @@ public class VueModificationSuppressionContact extends AppCompatActivity {
                 textViewAdresse.setText("52 rue du pellican");
                 textViewMail.setText("y.Fernand@laposte.net");
                 textViewNote.setText("La chaleur de l'espagne");
-                numberPicker.setText("7");
+                numberPicker.setText("9");
                 iv.setImageResource(R.drawable.woman3);
                 break;
             case "4":
@@ -75,7 +75,7 @@ public class VueModificationSuppressionContact extends AppCompatActivity {
                 textViewAdresse.setText("68 rue de l'armistice");
                 textViewMail.setText("M.Yuri@russia.com");
                 textViewNote.setText("La fraicheur russe");
-                numberPicker.setText("9");
+                numberPicker.setText("6");
                 iv.setImageResource(R.drawable.woman4);
                 break;
 
@@ -89,8 +89,8 @@ public class VueModificationSuppressionContact extends AppCompatActivity {
             public void onClick(View view) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(VueModificationSuppressionContact.this);
                 builder.setCancelable(true);
-                builder.setTitle("Supprimer contact");
-                builder.setMessage("Voulez-vous réellement supprimer ce contact ? ");
+                builder.setTitle("Suppression de contact ");
+                builder.setMessage("Voulez-vous réellement supprimer " + textViewNom.getText() + " " + textViewPrenom.getText() + " de la liste des contacts ?");
 
 
                 builder.setNegativeButton("Annuler", new DialogInterface.OnClickListener() {
